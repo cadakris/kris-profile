@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import Footer from '../src/components/Footer'
+import Projects from '../src/components/Projects'
+import Header from '../src/components/Header'
+import Skills from '../src/components/Skills'
+import About from '../src/components/About'
+import Contact from '../src/components/Contact'
+import './styles.scss'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <h1>This is a variable example</h1>
+
+      <div id = "nested" >
+        <h3>This is a nested rules example</h3>
+      </div>
+
+      <p className="interpolation">Interpolation Example</p>
+
+      <div id="function">
+        <h3>This is a function Example</h3>
+      </div>
+
+      <div id="mixin">
+        <h3>This is a mixin example</h3>
+      </div> */}
+
+
+      <Header/>
+
+    </>
   );
 }
 

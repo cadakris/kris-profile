@@ -1,0 +1,227 @@
+$headerWordsColor: red;
+$headerAdjColor: blue;
+
+h1 {
+  color: $headerWordsColor;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  max-width: 860px;
+  display:block
+}
+
+.titleFullName {
+  display: inline-block;
+  width: 100%;
+}
+
+h1 .titleJob {
+  font: {
+    weight: 700;
+    size: 1.6em;
+  }
+  text-transform: uppercase;
+}
+
+.flipAdjective{
+  font: {
+    style: normal;
+    size: 1.4em;
+    family: 'Open Sans', sans-serif;
+  }
+  // left: 0;
+  // margin-bottom: 0;
+  // margin-top: 50px;
+  // position: absolute;
+  // right: 0;
+  // text-align: center;
+
+//  top: 0;
+  color: $headerAdjColor
+}
+
+.flipContainer span {
+  // position: absolute;
+  // white-space: nowrap;
+  // opacity: 0;
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color: #0e6ffc;
+  animation: spin_words 6s infinite;
+}
+
+.adjectiveWords {
+  overflow: hidden;
+}
+
+@keyframes spin_words{
+  10%{
+      transform: translateY(-112%);
+  }
+  25%{
+      transform: translateY(-100%);
+  }
+  35%{
+      transform: translateY(-212%);
+  }
+  50%{
+      transform: translateY(-200%);
+  }
+  60%{
+      transform: translateY(-312%);
+  }
+  75%{
+      transform: translateY(-300%);
+  }
+  85%{
+      transform: translateY(-412%);
+  }
+  100%{
+      transform: translateY(-400%);
+  }
+}
+
+.wrapper {
+  // box-sizing: content-box;
+  background-color: #ffffff;
+  height: 70px;
+  padding: 50px 30px;
+  display: flex;
+  // border-radius: 8px;
+  // box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+}
+
+// @keyframes rotate-word {
+//   0% {
+//     opacity: 0;
+// }
+// 1% {
+//     -webkit-transform: translateY(-20px);
+//     transform: translateY(-20px);
+// }
+// 4% {
+//     opacity: 0;
+// }
+// 5% {
+//     opacity: 1;
+//     -webkit-transform: translateY(0px);
+//     transform: translateY(0px);
+// }
+// 17% {
+//     opacity: 1;
+//     -webkit-transform: translateY(0px);
+//     transform: translateY(0px);
+// }
+// 19% {
+//     opacity: 0;
+// }
+// 20% {
+//     -webkit-transform: translateY(20px);
+//     transform: translateY(20px);
+// }
+// 80% {
+//     opacity: 0;
+// }
+// 100% {
+//     opacity: 0;
+// }
+// }
+
+// .flipAdjective:nth-of-type(1) {
+//   animation-name: rotate;
+//   animation-duration: 1.5s;
+//   animation-delay: .5s;
+// }
+
+// .flipAdjective:nth-of-type(2) {
+//   animation-name: rotate;
+//   animation-duration: 1.5s;
+//   animation-delay: 1.75s;
+// }
+
+// .flipAdjective:nth-of-type(3) {
+//   animation-name: rotate;
+//   animation-duration: 1.5s;
+//   animation-delay: 3s;
+// }
+
+// .flipAdjective:nth-of-type(4) {
+//   animation-name: rotate;
+//   animation-duration: 1.5s;
+//   animation-delay: 4.70s;
+// }
+
+// .flipAdjective:nth-of-type(5) {
+//   animation-name: rotate;
+//   animation-duration: 1.5s;
+//   animation-delay: 3s;
+// }
+
+// .flipAdjective span {
+//   animation: rotate-word 20s linear infinite;
+//     animation-duration: 20s;
+//     animation-timing-function: linear;
+//     animation-delay: 0s;
+//     animation-iteration-count: infinite;
+//     animation-direction: normal;
+//     animation-fill-mode: none;
+//     animation-play-state: running;
+//     animation-name: rotate-word;
+// }
+
+// @keyframes rotate-last {
+//   0% {
+//     opacity: 0;
+//   }
+  
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// .rotatingText-adjective { 
+
+// }
+// $myColor: red;
+
+// h1 {
+//   font-size: 20px;
+//   color: $myColor;
+// }
+
+// p {
+//   color: $myColor;
+// }
+
+// $bgColor: #c1c1c1;
+
+// #nested {
+//   background-color: $bgColor;
+//   h3 {
+//     color: blue;
+//   }
+// }
+
+// @mixin text-style($name, $bold-or-normal, $size, $color) {
+//   #{$name} {
+//     font-size: #{$size}px;
+//     font-weight: #{$bold-or-normal};
+//     color: #{$color};
+//   }
+// }
+
+// @include text-style(".interpolation", bold, 25, blue);
+
+// $primary-color: green;
+// #function {
+//   background-color: invert($primary-color, 80%);
+//   h3 {
+//     color: white;
+//   }
+// }
+
+// @mixin default-text-style {
+//   padding: 20px;
+//   font-size: 16px;
+//   font-weight: bold;
+// }
