@@ -1,7 +1,20 @@
 //VARIABLES, RESETS, MIXINS, SIMILAIR STYLES
-$headerWordsColor: blue;
+
+// ----- GOOGLE FONTS ---------------------
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&family=Poppins:wght@300;600&family=Work+Sans:wght@200&display=swap');
+
+// ------ FONT VARIABLES
+$headerFont: 'Poppins', sans-serif;
+$textFont: 'Work Sans', sans-serif;
+$mainTitleFont: 'Epilogue', sans-serif;
+
+
+
+$headerWordsColor: #black;
 $headerAdjColor: red;
 
+
+// ----- GLOBAL STYLES
 *{
     margin: 0;
     padding: 0;
@@ -30,18 +43,8 @@ $headerAdjColor: red;
   position: relative;
 }
 
-  .mainContainer section {
-  margin: 5rem 0 0 0;
-}
+//   .mainContainer section {
+//   margin: 5rem 0 0 0;
+// }
 
 
-  // .mainBackground {
-  //   background-image: url(https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg);
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   background-size: cover;
-  //   margin: 0;
-  //   display: flex;
-  //   flex-direction: column;
-  //   height: 100vh;
-  // }

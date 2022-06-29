@@ -10,33 +10,16 @@ import './styles/app.scss'
 
 function App() {
   return (
-    <>
+  <>
 
-      {/* <h1>This is a variable example</h1>
-
-      <div id = "nested" >
-        <h3>This is a nested rules example</h3>
-      </div>
-
-      <p className="interpolation">Interpolation Example</p>
-
-      <div id="function">
-        <h3>This is a function Example</h3>
-      </div>
-
-      <div id="mixin">
-        <h3>This is a mixin example</h3>
-      </div> */}
-
-
-<Header/>
-<div className="mainContainer">
-    <About/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
-</div>
-    </>
+    <div className="mainContainer">
+        <Header/>
+        <About/>
+        <Projects/>
+        <Contact/>
+        <Footer/>
+    </div>
+  </>
   );
 }
 

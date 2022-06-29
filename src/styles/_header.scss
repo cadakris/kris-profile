@@ -2,30 +2,32 @@
 
 //HEADER
 
+.headerLeftStyle {
+  display: flex;
+  height: 529.6px;
+  // justify-content: center;
+  // align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
 h1 {
     color: $headerWordsColor;
-    letter-spacing: 0.05rem;
-    font-weight: 500;
-    max-width: 860px;
-    display:block;
+    display: block;
     span: {
       font: {
         size: 1.4em;
-        family: 'Open Sans', sans-serif;
+        family: $headerFont
       }
     }
   
     .titleFullName {
-      display: inline-block;
-      width: 100%;
-    }
-  
-    .titleJob {
+      line-height: .85em;
       font: {
-        weight: 700;
-        size: 1.6em;
+        family: $mainTitleFont;
+        size: 5em;
+        weight: bold;
       }
-      // text-transform: uppercase;
     }
   
     .flipAdjective{
@@ -47,7 +49,6 @@ h1 {
   }
   
   .wrapper {
-    background-color: #ffffff;
     height: 70px;
     padding: 30px 30px;
     display: flex;
@@ -83,3 +84,21 @@ h1 {
         transform: translateY(-400%);
     }
   }
+
+  .headerBackgroud {
+    background-image: url(https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+  }
+
+//   .angle1 {
+//     background-color: #f6e6e0;
+//     height: 120px;
+//     width: 100;
+
+// }
