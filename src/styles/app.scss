@@ -1,0 +1,83 @@
+@import "core";
+@import "header";
+
+img {
+  width: 40%;
+}
+
+
+
+// .grid-item1 {
+//   grid-area: about;
+// }
+
+// .grid-item2 {
+//   grid-area: aboutContent;
+// }
+
+// .grid-item3 {
+//   grid-area: projects;
+// }
+
+// .grid-item4 {
+//   grid-area: projectsContent;
+// }
+
+// .mainContainer {
+//   display: grid;
+//   grid-template-columns: 50vw 50vw;
+//   grid-template-rows: 1fr;
+//   grid-template-areas: 
+//     "about about"
+//     "projects projectsContent"
+//     "skills skills"
+//     "contact contact";
+// }
+
+//STUDY PURPOSES
+
+
+// }
+// $myColor: red;
+
+// h1 {
+//   font-size: 20px;
+//   color: $myColor;
+// }
+
+// p {
+//   color: $myColor;
+// }
+
+// $bgColor: #c1c1c1;
+
+// #nested {
+//   background-color: $bgColor;
+//   h3 {
+//     color: blue;
+//   }
+// }
+
+// @mixin text-style($name, $bold-or-normal, $size, $color) {
+//   #{$name} {
+//     font-size: #{$size}px;
+//     font-weight: #{$bold-or-normal};
+//     color: #{$color};
+//   }
+// }
+
+// @include text-style(".interpolation", bold, 25, blue);
+
+// $primary-color: green;
+// #function {
+//   background-color: invert($primary-color, 80%);
+//   h3 {
+//     color: white;
+//   }
+// }
+
+// @mixin default-text-style {
+//   padding: 20px;
+//   font-size: 16px;
+//   font-weight: bold;
+// }

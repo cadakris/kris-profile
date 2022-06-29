@@ -6,11 +6,12 @@ import Header from '../src/components/Header'
 import Skills from '../src/components/Skills'
 import About from '../src/components/About'
 import Contact from '../src/components/Contact'
-import './styles.scss'
+import './styles/app.scss'
 
 function App() {
   return (
     <>
+
       {/* <h1>This is a variable example</h1>
 
       <div id = "nested" >
@@ -28,8 +29,13 @@ function App() {
       </div> */}
 
 
-      <Header/>
-
+<Header/>
+<div className="mainContainer">
+    <About/>
+    <Projects/>
+    <Contact/>
+    <Footer/>
+</div>
     </>
   );
 }

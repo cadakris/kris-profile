@@ -1,0 +1,85 @@
+//HEADER, FOOTER, GRID SYSTEMS
+
+//HEADER
+
+h1 {
+    color: $headerWordsColor;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    max-width: 860px;
+    display:block;
+    span: {
+      font: {
+        size: 1.4em;
+        family: 'Open Sans', sans-serif;
+      }
+    }
+  
+    .titleFullName {
+      display: inline-block;
+      width: 100%;
+    }
+  
+    .titleJob {
+      font: {
+        weight: 700;
+        size: 1.6em;
+      }
+      // text-transform: uppercase;
+    }
+  
+    .flipAdjective{
+      font: {
+        style: normal;
+        size: 1.4em;
+        family: 'Open Sans', sans-serif;
+      }
+      color: $headerAdjColor
+    }
+  }
+  
+  .adjectiveWords span {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: headerAdjColor;
+    animation: spin_words 8s infinite;
+  }
+  
+  .wrapper {
+    background-color: #ffffff;
+    height: 70px;
+    padding: 30px 30px;
+    display: flex;
+  
+    .adjectiveWords {
+      overflow: hidden;
+    }
+  }
+  
+  @keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+  }

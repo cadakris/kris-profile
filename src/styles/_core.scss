@@ -1,0 +1,47 @@
+//VARIABLES, RESETS, MIXINS, SIMILAIR STYLES
+$headerWordsColor: blue;
+$headerAdjColor: red;
+
+*{
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+  }
+
+  .mainContainer {
+    position: relative;
+    width: 100 vw;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: 
+      'header content'
+      'footer content';
+  }
+
+  //BELOW SECTIONS MOVE THE CONTENT TO THE FAR LEFT
+  .mainContainer > section > .content > section {
+    left: calc(-50vw);
+}
+
+  .mainContainer > section > .content > section {
+  position: relative;
+}
+
+  .mainContainer section {
+  margin: 5rem 0 0 0;
+}
+
+
+  // .mainBackground {
+  //   background-image: url(https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  //   margin: 0;
+  //   display: flex;
+  //   flex-direction: column;
+  //   height: 100vh;
+  // }

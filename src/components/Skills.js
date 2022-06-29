@@ -2,7 +2,7 @@ import React from 'react'
 
 function Skills() {
   return (
-    <div>Skills</div>
+    <div className="grid-item3">Skills</div>
   )
 }
 
