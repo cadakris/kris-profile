@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+// import ResumeModal from './ResumeModal'
+import SinglePage from './SinglePage'
 
-function About() {
+function About({showResume, setShowResume, isOpen, setIsOpen}) {
+
+  function handleCloseModal () {
+    setShowResume((showResume) => !showResume)
+  }
+
+  const handleClick = () => {
+    setShowResume(!showResume)
+    setIsOpen(!isOpen)
+  }
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.style.overflow = isOpen ? 'hidden' : 'auto';
+    body.classList.add("modal-backgroud-mask")
+  }, [isOpen])
+
   return (
     <>
     <section className="about">
@@ -9,8 +27,13 @@ function About() {
       </header>
 
       <div className="content">
-        <p>I'm a software engineer with over ten years of experience in the television industry. As a versatile post production professional, I successfully created and delivered hours of entertaining content in a fast-paced environment with evolving project scope. My problem solving, time management, and effective communication skills allowed me to lead my team in order to deliver meaningful and entertaining content. As a producer, collaboration is essential to executing and delivering a great product. I embrace teamwork with a positive and highly adaptable mindset, but can also work independently. I am a voracious learner who is excited to utilize my experience and passion as a software engineer to develop and create exciting products.</p>
-        <button>Resume</button>
+        <p>Hi! I'm a software developer with experience utilizing frontend and backend technologies. With ten years of professional experience in the television industry, I successfully managed teams, created hours of content, and managed projects life cycles from acquisition to customer delivery for various television production companies. I’m a voracious learner who is excited to utilize my newfound passion and skills to develop and create exciting products!</p><br/>
+
+        <p>When I'm not coding, you can find me exploring exploring my city, reading, riding my bike, or hiking!</p><br/>
+
+        <p>To learn more about my professional and technical experience, please check out my resume</p><br/>
+        <button onClick={handleClick}><span>Resume</span></button>
+        {showResume ? null : <SinglePage handleCloseModal={handleCloseModal} setShowResume={setShowResume}/>}
       </div>
     </section>
     </>

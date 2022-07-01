@@ -1,17 +1,18 @@
 //VARIABLES, RESETS, MIXINS, SIMILAIR STYLES
 
 // ----- GOOGLE FONTS ---------------------
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&family=Poppins:wght@300;600&family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100&family=Poppins:wght@300;600&family=Sacramento&family=Work+Sans:wght@200&display=swap');
 
 // ------ FONT VARIABLES
 $headerFont: 'Poppins', sans-serif;
 $textFont: 'Work Sans', sans-serif;
 $mainTitleFont: 'Epilogue', sans-serif;
+$h2HeaderFonts: 'Sacramento', cursive;
 
-
-
-$headerWordsColor: #black;
-$headerAdjColor: red;
+// ------ COLORS
+$headerWordsColor: black;
+$headerAdjColor: #f6e6e0;;
+$secondaryColor: white;
 
 
 // ----- GLOBAL STYLES
@@ -34,6 +35,8 @@ $headerAdjColor: red;
       'footer content';
   }
 
+
+
   //BELOW SECTIONS MOVE THE CONTENT TO THE FAR LEFT
   .mainContainer > section > .content > section {
     left: calc(-50vw);
@@ -44,7 +47,98 @@ $headerAdjColor: red;
 }
 
 //   .mainContainer section {
-//   margin: 5rem 0 0 0;
+//   padding: 2% 0 0 0;
 // }
 
+header {
+  background-color: #f6e6e0;;
+}
 
+h2 {
+  font: {
+    family: $h2HeaderFonts;
+    size: 2.5em;
+  }
+  text-align: center;
+  padding-top: 3%;
+  letter-spacing: .1em;
+}
+
+.modal {
+  border-radius: 4px;
+  position: fixed;
+  z-index: 25;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // width: 55vw;
+  // min-height: 90vh;
+  background-color: #f4f5f7;
+  overflow-y:hidden;
+  max-height: 100vh;
+}
+
+.modal-background-mask {
+  position: fixed;
+  // width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.17)
+}
+
+.scroll {
+  padding: 10px;
+  max-height: 95vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+// ----- MIXINS
+@mixin buttonStyle {
+    text-decoration: none;
+    border: 2px solid #010100;
+    padding: 8px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
+
+@mixin beforeButtonStyle {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    /*100% plus double the times left values*/
+    height: calc(100% - 10px);
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+    color: black;
+}
+
+@mixin beforeHoverButton {
+  transform: scaleY(0);
+}
+
+@mixin afterButtonStyle {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  /*100% plus double the times left values*/
+  height: calc(100% + 10px);
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+@mixin afterHoverButton {
+  transform: scaleX(0);
+}

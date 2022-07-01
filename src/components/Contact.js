@@ -61,7 +61,7 @@ function Contact() {
             value={toSend.message}
             onChange={handleInputChanges}
           />
-          <button type="submit">Submit</button>
+          <button type="submit"><span>Submit</span></button>
         </form>
       </div>
     </div>

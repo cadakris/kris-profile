@@ -1,0 +1,24 @@
+button {
+    @include buttonStyle;
+
+    &::before {
+        @include beforeButtonStyle;
+    }
+
+    &:hover::before {
+        @include beforeHoverButton
+    }
+
+    &::after {
+        @include afterButtonStyle
+    }
+
+    &:hover::after {
+        @include afterHoverButton
+    }
+
+    span {
+        position: relative;
+        z-index: 3; 
+    }
+}

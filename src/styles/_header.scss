@@ -34,9 +34,16 @@ h1 {
       font: {
         style: normal;
         size: 1.4em;
-        family: 'Open Sans', sans-serif;
+        family: 'Sacramento', cursive;
       }
       color: $headerAdjColor
+    }
+
+    .titleJob {
+      font: {
+        size: 2em;
+      }
+      color: navy;
     }
   }
   
@@ -52,6 +59,7 @@ h1 {
     height: 70px;
     padding: 30px 30px;
     display: flex;
+    // text-align: center;
   
     .adjectiveWords {
       overflow: hidden;
@@ -96,9 +104,19 @@ h1 {
     height: 80vh;
   }
 
-//   .angle1 {
-//     background-color: #f6e6e0;
-//     height: 120px;
-//     width: 100;
+  .headerAdjectiveContainer {
+    padding-top: 300px;
+  }
 
-// }
+  .iconContainer {
+    margin-top: 25px;
+
+    .headerIcons {
+      color: black;
+      padding-right: 25px;
+    }
+
+  }
+
+
+
