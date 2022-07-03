@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <>
-      <div className="headerBackgroud">
+        <div className="headerBackgroud">
         <section className="header">
 
           <div className="headerLeftStyle">
@@ -43,15 +43,11 @@ function Header() {
             <BsMedium size={30} />
             </a>
             </div>
-
-
-
           </h1>
-
           </div>
 
         
-        <div className="content">
+        <div className="content rightBackground">
           <div className="headerAdjectiveContainer">
           <h1>
             <span className="titleJob">software developer</span><br/>
@@ -69,7 +65,7 @@ function Header() {
           </div>
         </div>
         </section>
-      </div>
+        </div>
     </>
   )
 }

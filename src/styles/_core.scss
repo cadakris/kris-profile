@@ -19,6 +19,7 @@ $secondaryColor: white;
 *{
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased
     // box-sizing: border-box;
   }
 
@@ -34,8 +35,6 @@ $secondaryColor: white;
       'header content'
       'footer content';
   }
-
-
 
   //BELOW SECTIONS MOVE THE CONTENT TO THE FAR LEFT
   .mainContainer > section > .content > section {
@@ -60,7 +59,7 @@ h2 {
     size: 2.5em;
   }
   text-align: center;
-  padding-top: 3%;
+  padding-top: 6%;
   letter-spacing: .1em;
 }
 
@@ -141,4 +140,24 @@ h2 {
 
 @mixin afterHoverButton {
   transform: scaleX(0);
+}
+
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin textStyles {
+  font: {
+    family: $textFont;
+    weight: bold;
+  }
+  line-height: 1.3em;
+  letter-spacing: .1em;
+}
+
+@mixin contentPadding {
+  padding-top: 8%;
+  padding-bottom: 2%;
 }

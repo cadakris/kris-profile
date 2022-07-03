@@ -1,0 +1,16 @@
+.contentContact {
+    @include contentPadding;
+}
+
+p {
+    @include textStyles
+}
+
+.formContainer {
+    @include centering;
+    padding-top: 5%;
+}
+
+input {
+    
+}

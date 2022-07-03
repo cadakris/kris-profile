@@ -36,7 +36,7 @@ function Contact() {
       <h2>Let's Connect</h2>
     </header>
 
-    <div className="content">
+    <div className="content contentContact">
       <p>I am currently open to new freelance projects, full-time job opportunities, and memes!</p>
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
@@ -46,21 +46,21 @@ function Contact() {
             placeholder='Name'
             value={toSend.first_name}
             onChange={handleInputChanges}
-          />
+          /><br/>
           <input
             type='text'
             name='from_email'
             placeholder='Email'
             value={toSend.from_email}
             onChange={handleInputChanges}
-          />
+          /><br/>
           <input
             type='text'
             name='message'
             placeholder='Write Your Message Here'
             value={toSend.message}
             onChange={handleInputChanges}
-          />
+          /><br/>
           <button type="submit"><span>Submit</span></button>
         </form>
       </div>

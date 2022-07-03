@@ -22,3 +22,16 @@ button {
         z-index: 3; 
     }
 }
+
+.center {
+    margin-bottom: 8%;
+    @include centering
+}
+
+.aboutContentText {
+    padding: 8% 8% 2%;
+}
+
+.aboutContentText p {
+    @include textStyles;
+}
