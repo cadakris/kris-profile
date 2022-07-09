@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "ReciPrep",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "videoSource": "https://www.youtube.com/embed/wwTBl4AuHDs",
+        "imageSource": 
+            ["https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg",
+            "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg",
+            "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg" 
+            ],
+        "githubLink": "https://github.com/cadakris/mealprep"
+    },
+    {
+        "id": 2,
+        "title": "BookBook",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "videoSource": "https://www.youtube.com/embed/wwTBl4AuHDs",
+        "imageSource": 
+        ["https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg",
+        "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg",
+        "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg" 
+        ],
+        "githubLink": "https://github.com/cadakris/BookBook"
+    },
+    {
+        "id": 3,
+        "title": "Swap't",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "videoSource": "https://www.youtube.com/embed/wwTBl4AuHDs",
+        "imageSource": 
+        ["https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg",
+        "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg",
+        "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg" 
+        ],
+        "githubLink": "https://github.com/cadakris/BookBook"
+    }
+]

@@ -5,14 +5,14 @@ import Projects from '../src/components/Projects'
 import Header from '../src/components/Header'
 import About from '../src/components/About'
 import Contact from '../src/components/Contact'
+
 import './styles/app.scss'
 import './App.css';
 
 function App() {
-
   const [showResume, setShowResume] = useState(true)
   const [isOpen, setIsOpen] = useState(false)
-
+  const [showDemo, setShowDemo] = useState(true)
 
   return (
   <>
@@ -24,7 +24,11 @@ function App() {
           isOpen={isOpen}
           setIsOpen={setIsOpen}
           />
-        <Projects/>
+        <Projects
+          setShowDemo={setShowDemo}
+          showDemo={showDemo}
+
+          />
         <Contact/>
         <Footer/>
     </div>

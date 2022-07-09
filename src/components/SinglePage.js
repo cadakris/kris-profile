@@ -17,14 +17,13 @@ function SinglePage({setShowResume, handleCloseModal}) {
     <>
     <div className="">
       <div className="modal scroll">
-        <button onClick={handleCloseModal}><span>x</span></button> <button> <a href='/KristenCadacioResume.pdf' download><span>Click to download</span></a></button>
-        <Document file = "KristenCadacioResume.pdf" onLoadSuccess = {onDocumentLoadSuccess}>
+        <button onClick={handleCloseModal}><span>x</span></button> <button> <a href='/KristenResume070822.pdf' download><span>Click to download</span></a></button>
+        <Document file = "KristenResume070822.pdf" onLoadSuccess = {onDocumentLoadSuccess}>
           <Page pageNumber={pageNumber}/>
         </Document>
       </div>
     </div>
     </>
-
   )
 }
 

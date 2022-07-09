@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 // import ResumeModal from './ResumeModal'
 import SinglePage from './SinglePage'
 
+
 function About({showResume, setShowResume, isOpen, setIsOpen}) {
 
   function handleCloseModal () {
