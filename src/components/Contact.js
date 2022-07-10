@@ -32,7 +32,7 @@ function Contact() {
 
   return (
    <section className="contact">
-    <header>
+    <header className="headerColor">
       <h2>Let's Connect</h2>
     </header>
 

@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../src/components/Footer'
 import Projects from '../src/components/Projects'
 import Header from '../src/components/Header'
@@ -14,6 +14,12 @@ function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [showDemo, setShowDemo] = useState(true)
 
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.style.overflow = isOpen ? 'hidden' : 'auto';
+    body.classList.add("modal-backgroud-mask")
+  }, [isOpen])
+
   return (
   <>
     <div className="mainContainer modal-open">
@@ -27,7 +33,8 @@ function App() {
         <Projects
           setShowDemo={setShowDemo}
           showDemo={showDemo}
-
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
           />
         <Contact/>
         <Footer/>

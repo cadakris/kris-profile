@@ -25,8 +25,44 @@ $secondaryColor: white;
 
   .mainContainer {
     position: relative;
-    width: 100 vw;
   }
+
+//   //BELOW SECTION CREATES SECTION LINE
+//   .mainContainer > section > header:before {
+//     background: black;
+//     content: '';
+//     display: block;
+//     margin-top: 1rem;
+//     position: absolute;
+//     width: 2px;
+//     z-index: 1;
+// }
+
+ .mainContainer > section > header:before {
+  height: calc(100% + 10rem);
+  left: calc(50vw - 5rem);
+  z-index: 1;
+}
+
+// //THIS CREATES DOT AT THE END OF SECTION LINES
+// .mainContainer > section:last-of-type > header:after {
+// 	background: white;
+// 	border-radius: 0.5rem;
+// 	bottom: -1.5rem;
+// 	content: '';
+// 	display: block;
+// 	height: 0.5rem;
+// 	position: absolute;
+// 	width: 0.5rem;
+// 	z-index: 1;
+// }
+
+//THIS MAKES THE LINE MOVE TO THE RIGHT
+.mainContainer > section:last-of-type > header:after {
+  left: calc(50vw - 5rem - 0.25rem + 1px);
+}
+
+//BELOW CREATES SECTIONS
 
   section {
     display: grid;
@@ -36,7 +72,12 @@ $secondaryColor: white;
       'footer content';
   }
 
-  //BELOW SECTIONS MOVE THE CONTENT TO THE FAR LEFT
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+//BELOW SECTIONS MOVE THE CONTENT TO THE FAR LEFT
   .mainContainer > section > .content > section {
     left: calc(-50vw);
 }
@@ -45,12 +86,9 @@ $secondaryColor: white;
   position: relative;
 }
 
-//   .mainContainer section {
-//   padding: 2% 0 0 0;
-// }
 
-header {
-  background-color: #f6e6e0;;
+header.headerColor {
+  background-color: #f6e6e0;
 }
 
 h2 {
@@ -58,9 +96,10 @@ h2 {
     family: $h2HeaderFonts;
     size: 2.5em;
   }
-  text-align: center;
+  text-align: right;
   padding-top: 6%;
   letter-spacing: .1em;
+  padding-right: 14%;
 }
 
 .modal {
@@ -93,6 +132,7 @@ h2 {
   overflow-y: auto;
 }
 
+//BELOW SECTIONS ARE FOR DEMO MODAL...NEED TO FIGURE OUT A WAY TO INCORPORATE WITH ABOVE MODAL
 .modalDemo {
   border-radius: 4px;
   position: fixed;
@@ -131,6 +171,12 @@ h2 {
   height:100%;
 }
 
+
+
+//PROJECT PROBABLY NEEDS ITS OWN SCSS FILE
+// .projectHeader {
+//   padding-right: 40px;
+// }
 
 
 
@@ -201,3 +247,141 @@ h2 {
   padding-top: 8%;
   padding-bottom: 2%;
 }
+
+
+
+//================
+
+.header:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  bottom: 0;
+  left: 43%;
+  border-left: 3px solid white;
+  // transform: translate(-50%);
+} 
+
+h2:after {
+  content: " ";
+  display: inline-block;
+  background: white;
+  width: 20%;
+  height: 3px;
+  // margin-left: 20%;
+  position: relative;
+}
+
+// .mainContainer > section > header h2:before {
+//   background: white;
+//   content: "";
+//   display: block;
+//   height: 2px;
+//   position: absolute;
+//   top: 1rem;
+//   right: -5rem;
+//   width: 2.5rem;
+  
+// .mainContainer section:first-child {
+// 	margin-top: 0;
+// }
+
+// .mainContainer section > header {
+// 	grid-area: header;
+// 	justify-self: end;
+// 	text-align: right;
+// }
+
+// // .mainContainer section > header h2 {
+// // 	margin: 0 0 5rem 0;
+// // }
+
+// .mainContainer section > footer {
+// 	grid-area: footer;
+// 	text-align: right;
+// }
+
+// .mainContainer section > footer ul.actions {
+// 	justify-content: flex-end;
+// }
+
+// .mainContainer > section {
+// 	position: relative;
+// }
+
+// .mainContainer > section > header:before {
+// 	background: white;
+// 	content: '';
+// 	display: block;
+// 	margin-top: 1rem;
+// 	position: absolute;
+// 	width: 2px;
+// }
+
+// .mainContainer > section > header h1,
+// .mainContainer > section > header h2 {
+// 	position: relative;
+// }
+
+// .mainContainer > section > header h1:before,
+// .mainContainer > section > header h2:before {
+// 	background: white;
+// 	content: '';
+// 	display: block;
+// 	height: 2px;
+// 	position: absolute;
+// 	top: 1rem;
+// }
+
+// .mainContainer > section > header h1:after,
+// .mainContainer > section > header h2:after {
+// 	background: white;
+// 	border-radius: 0.5rem;
+// 	content: '';
+// 	display: block;
+// 	height: 0.5rem;
+// 	position: absolute;
+// 	top: 0.75rem;
+// 	width: 0.5rem;
+// }
+
+// .mainContainer > section.intro {
+// 	align-items: center;
+// }
+
+// .mainContainer section > header {
+// 	padding: 0 10rem 0 5rem;
+// 	width: 35rem;
+// }
+
+// .mainContainer section > .content {
+// 	padding: 0 5rem;
+// }
+
+// .mainContainer section > footer {
+// 	padding: 0 10rem;
+// }
+
+// .mainContainer > section > header h1:before,
+// .mainContainer > section > header h2:before {
+// 	right: -5rem;
+// 	width: 2.5rem;
+// }
+
+// .mainContainer > section > header h1:after,
+// .mainContainer > section > header h2:after {
+// 	right: -2.5rem;
+// }
+
+// .mainContainer > section > .content > section {
+// 	left: calc(-50vw - 5rem);
+// }
+
+// .mainContainer > section > .content > section > header {
+// 	width: 100%;
+// }
+
+// .descriptionContainer {
+//   width: 100%;
+// }

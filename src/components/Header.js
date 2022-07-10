@@ -6,9 +6,9 @@ function Header() {
 
   return (
     <>
-        <div className="headerBackgroud">
+        {/* <div className="headerBackgroud"> */}
         <section className="header">
-
+          <header id="noColorHeader">
           <div className="headerLeftStyle">
           <h1>
             <span className="titleFullName">kristen cadacio</span><br/>
@@ -45,6 +45,7 @@ function Header() {
             </div>
           </h1>
           </div>
+          </header>
 
         
         <div className="content rightBackground">
@@ -65,7 +66,7 @@ function Header() {
           </div>
         </div>
         </section>
-        </div>
+        {/* </div> */}
     </>
   )
 }

@@ -16,16 +16,12 @@ function About({showResume, setShowResume, isOpen, setIsOpen}) {
   }
 
   //TARGETING THE BODY TO HIDE SCROLLBAR AND ADD MODAL CLASSNAME 
-  useEffect(() => {
-    const body = document.querySelector('body');
-    body.style.overflow = isOpen ? 'hidden' : 'auto';
-    body.classList.add("modal-backgroud-mask")
-  }, [isOpen])
+
 
   return (
     <>
     <section className="about">
-      <header>
+      <header className="headerColor">
         <h2>About</h2>
       </header>
 

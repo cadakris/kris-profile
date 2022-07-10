@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DemoModal({ handleCloseModal, demoSrc }) {
+function DemoModal({ handleCloseModal, demoSrc, projectInfo }) {
   return (
     <>
     <div className="">
@@ -8,7 +8,7 @@ function DemoModal({ handleCloseModal, demoSrc }) {
         <button onClick={handleCloseModal}><span>x</span></button>
         <div className="h_iframe">
             <iframe className="demoVideo"
-                src="{demoSrc}"
+                src={projectInfo.videoSource}
                 frameBorder="0"
                 height="400"
                 width="2"

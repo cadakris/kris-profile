@@ -93,7 +93,7 @@ h1 {
     }
   }
 
-  .headerBackgroud {
+  .header {
     background-image: url(https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656827897/heather-day-art-11_nucjqz.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -103,6 +103,10 @@ h1 {
     flex-direction: column;
     height: 80vh;
     width: 100vw;
+  }
+
+  header#noColorHeader {
+    background-color: none !important;
   }
 
   // .rightBackground {
