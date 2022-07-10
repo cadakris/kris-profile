@@ -32,11 +32,15 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen}) {
               <>
               <section key={projectInfo.id}>
                 <header className="projectHeader">
+                  <div className="projectDescription">
                   <h3>{projectInfo.title}</h3>
-                <div className="descriptionContainer"><p>{projectInfo.description}</p></div>
+                  <p>{projectInfo.description}</p>
+                  </div>
+
+                <div>
                 <ul>
                   <li>
-                    <div>
+                    <div className="buttonContainer">
                       <button onClick={handleClick}><span>Demo</span></button>
                       {showDemo ? null : <DemoModal handleCloseModal={handleCloseModal} setShowDemo={setShowDemo} demoSrc={demoSrc} projectInfo={projectInfo} />}
                     </div>
@@ -45,6 +49,7 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen}) {
                   <button><a target="_blank" href={projectInfo.githubLink}><span>Github</span></a></button>
                 </li>
                 </ul>
+                </div>
                 </header>
 
 
@@ -64,42 +69,6 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen}) {
             )
           }
           )}
-
-        
-          {/* PROJECT 1 */}
-          {/* <section>
-            <header>
-              <h3>Reci-Prep</h3>
-              <p className="descriptions">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <ul>
-                <li>
-                <div>
-                    <button onClick={handleClick} value="https://www.youtube.com/embed/wwTBl4AuHDs"><span>Demo</span> </button>
-                    {showDemo ? null : <DemoModal handleCloseModal={handleCloseModal} setShowDemo={setShowDemo} demoSrc={demoSrc} />}
-                  </div>
-                </li>
-                <li>
-                  <a target="_blank" href="">Github</a>
-                </li>
-              </ul>  
-            </header>
-
-            <div className="content">
-              <div className="gallery">
-                <a href="">
-                  <img src="https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg"></img>
-                </a>
-
-                <a href="">
-                  <img src="https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg"></img>
-                </a>
-
-                <a href="">
-                  <img src="https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656101959/heather-day-art-11_svbe56.jpg"></img>
-                </a>
-              </div>
-            </div>
-          </section> */}
           </div>
       </section>
 
