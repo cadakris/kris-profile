@@ -18,6 +18,11 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen}) {
     setIsOpen(!isOpen)
   }
 
+  const handlePhotoClick = (e) => {
+    console.log("I was clicked")
+    console.log(e.target)
+  }
+
   return (
     <>
       <section className="projects">
@@ -34,32 +39,30 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen}) {
                 <header className="projectHeader">
                   <div className="projectDescription">
                   <h3>{projectInfo.title}</h3>
-                  <p>{projectInfo.description}</p>
+                  <p className="projectParagraph">{projectInfo.technologies}</p>
+                  <p z>{projectInfo.description}</p>
                   </div>
 
-                <div>
-                <ul>
-                  <li>
-                    <div className="buttonContainer">
-                      <button onClick={handleClick}><span>Demo</span></button>
-                      {showDemo ? null : <DemoModal handleCloseModal={handleCloseModal} setShowDemo={setShowDemo} demoSrc={demoSrc} projectInfo={projectInfo} />}
-                    </div>
+                <ul className="buttonContainer">
+                  <li className="projectList">
+                    <button onClick={handleClick}><span className="projectSpan">Demo</span></button>
+                    {showDemo ? null : <DemoModal handleCloseModal={handleCloseModal} setShowDemo={setShowDemo} demoSrc={demoSrc} projectInfo={projectInfo} />}
                   </li>
-                  <li>
-                  <button><a target="_blank" href={projectInfo.githubLink}><span>Github</span></a></button>
-                </li>
+                  <li className="projectList">
+                    <button><a target="_blank" href={projectInfo.githubLink}><span className="projectSpan">Github</span></a></button>
+                  </li>
                 </ul>
-                </div>
                 </header>
 
 
               <div className="content">
                 <div className="gallery">
+                <img onclick={handlePhotoClick} className="landscapeImg" src={projectInfo.mainPotoSrc}></img>
                     {projectInfo.imageSource.map(image => {
                       return (
-                        <a href="">
+                        <div className="imgContainer">
                           <img src={image}></img>
-                        </a>
+                        </div>
                       )
                     })}
                 </div>

@@ -2,11 +2,64 @@
     padding-right: 15%;
     text-align: right;
     width: 80%;
-    // text-align: justify;
-    // text-justify: inter-word;
+}
+
+
+
+button .span {
+    display: table-cell;
+    text-align: center;
 }
 
 .buttonContainer {
-        display: flex;
-        justify-content: space-between;
+    display: table;
+    width: 80%;
+    table-layout: fixed;
+}
+
+.projectList {
+    display: table-cell;
+    text-align: right;
+}
+
+.projectParagraph {
+    padding-bottom: 1.5em;
+}
+
+
+
+//PHOTO
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 1.25rem);
+    margin-bottom: 15%;
+}
+
+.landscapeImg {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    border: rgb(236, 236, 236) 3px solid;
+}
+
+.imgContainer {
+    width: calc(50% - 2%);
+    text-align: center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.imgContainer img {
+    width: 100%;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
 }
