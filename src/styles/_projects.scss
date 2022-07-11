@@ -1,10 +1,8 @@
 .projectDescription {
-    padding-right: 15%;
     text-align: right;
-    width: 80%;
+    width: 50%;
+    padding-left: 30%;
 }
-
-
 
 button .span {
     display: table-cell;
@@ -12,28 +10,25 @@ button .span {
 }
 
 .buttonContainer {
-    display: table;
     width: 80%;
-    table-layout: fixed;
+    text-align: right;
 }
 
 .projectList {
-    display: table-cell;
-    text-align: right;
+    padding: 6%;
 }
 
 .projectParagraph {
     padding-bottom: 1.5em;
 }
 
-
-
 //PHOTO
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% + 1.25rem);
+    // width: calc(100% + 1.25rem);
+    width: 100%;
     margin-bottom: 15%;
 }
 
@@ -61,5 +56,4 @@ button .span {
     display:block;
     margin-left:auto;
     margin-right:auto;
-
 }

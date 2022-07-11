@@ -40,28 +40,33 @@ function Contact() {
       <p>I am currently open to new freelance projects, full-time job opportunities, and memes!</p>
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
-          <input
+          <div className="halfContainer">
+          <input className="half"
             type='text'
             name='from_name'
             placeholder='Name'
             value={toSend.first_name}
             onChange={handleInputChanges}
           /><br/>
-          <input
+          <input className="half"
             type='text'
             name='from_email'
             placeholder='Email'
             value={toSend.from_email}
             onChange={handleInputChanges}
           /><br/>
-          <input
+          </div>
+          <div className="messageContainer">
+          <textarea className="message"
             type='text'
             name='message'
             placeholder='Write Your Message Here'
             value={toSend.message}
             onChange={handleInputChanges}
           /><br/>
-          <button type="submit"><span>Submit</span></button>
+                    <button type="submit"><span>Submit</span></button>
+          </div>
+
         </form>
       </div>
     </div>

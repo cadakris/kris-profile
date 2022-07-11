@@ -1,16 +1,46 @@
 .contentContact {
     @include contentPadding;
+    padding: 8% 8% 2%;
 }
 
 p {
     @include textStyles
 }
 
-.formContainer {
-    @include centering;
-    padding-top: 5%;
+input, textarea {
+    font: {
+        size: 1.3em;
+        family: $textFont;
+    }
+    padding: 1%;
 }
 
-// input {
-    
-// }
+.halfContainer {
+    display:flex;  
+    align-items:stretch;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+
+.half {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.messageContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 12%;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    height: 150px;
+}
+
+.message {
+    width: 92%;
+    margin-bottom: 5%;
+}
