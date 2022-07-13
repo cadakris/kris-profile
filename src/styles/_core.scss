@@ -90,11 +90,12 @@ h2 {
 
 .modal-background-mask {
   position: fixed;
-  // width: 100vw;
+  width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.17)
+  background-color: rgba(0, 0, 0, 0.17);
+  z-index: 5000;
 }
 
 .scroll {
@@ -247,6 +248,12 @@ h3 {
   padding-bottom: 3%;
 }
 
+//FOOTER STUFF
+
 footer{
   text-align: center;
+}
+
+.footerSection {
+  margin-bottom: 10%;
 }

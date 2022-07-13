@@ -1,9 +1,9 @@
 import React from 'react'
 
-function DemoModal({ handleCloseModal, demoSrc, projectInfo }) {
+function DemoModal({ handleCloseModal, projectInfo }) {
   return (
     <>
-    <div className="">
+    <div className="modal-background-mask">
       <div className="modalDemo scroll">
         <button onClick={handleCloseModal}><span>x</span></button>
         <div className="h_iframe">

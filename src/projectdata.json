@@ -5,9 +5,9 @@
         "description": "An application where users can add and edit recipes and use those recipes to meal prep for the week",
         "technologies": "HTML | CSS | Ruby on Rails | ReactJS",
         "videoSource": "https://www.youtube.com/embed/GNSIfYRg6YA",
-        "mainPotoSrc":"https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657486848/Profile%20Photos/ReciPrep_MainPage_1_ebwg9d.jpg",
         "imageSource": 
             [
+            "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657486848/Profile%20Photos/ReciPrep_MainPage_1_ebwg9d.jpg",
             "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657558076/Profile%20Photos/ReciPrep_RecipeDragNDrop_1_dzc6kg.jpg",
             "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657558133/Profile%20Photos/ReciPrep_MainPage_2_hccsmv.jpg",
             "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657558198/Profile%20Photos/ReciPrep_RecipePage_2_xyj5of.jpg",
@@ -22,9 +22,9 @@
         "description": "An application that allows users to search for books and organize them into list",
         "technologies": "HTML | CSS | Ruby on Rails | ReactJS",
         "videoSource": "https://www.youtube.com/embed/wwTBl4AuHDs",
-        "mainPotoSrc": "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657557350/Profile%20Photos/BookBook_MainPage_1_oyddvs.jpg",
         "imageSource": 
         [
+        "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657557350/Profile%20Photos/BookBook_MainPage_1_oyddvs.jpg",
         "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657557665/Profile%20Photos/BookBook_Modal_3_iqcgtq.jpg",
         "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657557862/Profile%20Photos/BookBook_SearchPage_1_trqgue.jpg",
         "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657487105/Profile%20Photos/BookBook_UserPageShelves_1_lwotab.jpg",
@@ -39,9 +39,9 @@
         "description": "An application where users can upload items and search for items they want to exchange with other users",
         "technologies": "HTML | CSS | Ruby | ReactJS | Sinatra",
         "videoSource": "https://www.youtube.com/embed/T8Bhvqs0dzY",
-        "mainPotoSrc": "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657556891/Profile%20Photos/Swapt_MainPage_1_h7xgnu.jpg",
         "imageSource": 
         [
+        "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657556891/Profile%20Photos/Swapt_MainPage_1_h7xgnu.jpg",
         "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657557007/Profile%20Photos/Swapt_ItemModal_2_teszja.jpg",
         "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657557129/Profile%20Photos/Swapt_RequestPage_3_adsblf.jpg",
         "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657557181/Profile%20Photos/Swapt_RequestPage_1_rqnihb.jpg" ,

@@ -37,7 +37,7 @@ function Contact() {
     </header>
 
     <div className="content contentContact">
-      <p>I am currently open to new freelance projects, full-time job opportunities, and memes!</p>
+      <p>I am currently open to new freelance projects, full-time job opportunities, and funny memes!</p>
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
           <div className="halfContainer">

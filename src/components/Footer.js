@@ -7,6 +7,7 @@ function Footer() {
     <footer>
     <section>
       <header className="headerColor">
+      <div className="footerSection">
       <span>
       <p>© Kristen Cadacio. All rights reserved.</p>
       <p>Built and Designed by Kristen Cadacio{" "}
@@ -18,6 +19,7 @@ function Footer() {
         <FaGithub className="footerIcon" />
       </a>{" "}</p>
     </span>
+    </div>
       </header>
     </section>
     </footer>
