@@ -9,7 +9,7 @@ function DemoModal({ handleCloseModal, projectInfo }) {
   useEffect (() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 4000);
   }, [])
 
   return (
@@ -18,9 +18,9 @@ function DemoModal({ handleCloseModal, projectInfo }) {
     <div className="modal-background-mask">
       <div className="modalDemo scroll">
         <div className="loadingContainer">
-          <Heart color="#f6e6e0" size={100} />
-          <Heart color="#f6e6e0" size={100} />
-          <Heart color="#f6e6e0" size={100} /><br/>
+          <Heart color="#f6e6e0" size={80} />
+          <Heart color="#f6e6e0" size={80} />
+          <Heart color="#f6e6e0" size={80} /><br/>
           <p> Loading </p>
           </div>
       </div>

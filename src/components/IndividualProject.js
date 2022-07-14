@@ -55,7 +55,7 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
                 {showPhotos ? null : <PhotoModal handleClosePhotoModal={handleClosePhotoModal} clickedProject={clickedProject}/>}
                     {projectInfo.imageSource.map((image, index) => {
                       if (index === 0) {
-                        return (<img className="landscapeImg" src={projectInfo.mainPotoSrc} onClick={handlePhotoClick}></img>)
+                        return (<img className="landscapeImg" src={image} onClick={handlePhotoClick} key={index}></img>)
                       } else {
                         return (
                           <div className="imgContainer" key={image} onClick={handlePhotoClick}>

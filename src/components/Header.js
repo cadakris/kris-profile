@@ -1,6 +1,7 @@
 import React from 'react';
-import { AiFillGithub } from 'react-icons/ai';
-import { BsMedium, BsLinkedin } from 'react-icons/bs'
+import { AiFillGithub, AiOutlineMedium } from 'react-icons/ai';
+import { BsLinkedin } from 'react-icons/bs'
+
 
 function Header() {
 
@@ -11,7 +12,7 @@ function Header() {
           <header id="noColorHeader">
           <div className="headerLeftStyle">
           <h1>
-            <span className="titleFullName">kristen cadacio</span><br/>
+            <span className="titleFirstName">kristen</span>
             <div className="iconContainer">
               <a
                 className="headerIcons"
@@ -40,7 +41,7 @@ function Header() {
                 rel="noopener"
                 aria-label='Medium'
               >
-            <BsMedium size={30} />
+            <AiOutlineMedium size={30} />
             </a>
             </div>
           </h1>
@@ -51,9 +52,10 @@ function Header() {
         <div className="content rightBackground">
           <div className="headerAdjectiveContainer">
           <h1>
-            <span className="titleJob">software developer</span><br/>
+          <span className="titleLastName">cadacio</span><br/>
+            <div className="anotherDiv"><span className="titleJob">software developer</span><br/></div>
             <div className="wrapper">
-            and 
+            <span className="titleJob">and </span>
               <div className="adjectiveWords">
                 <span className="flipAdjective">a plant mom</span>
                 <span className="flipAdjective">hiker</span>
