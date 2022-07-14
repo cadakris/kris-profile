@@ -35,3 +35,10 @@ button {
 .aboutContentText p {
     @include textStyles;
 }
+
+.heartsContainer {
+    height: 90vh;
+    width: 65vw;
+    margin-top: 15%;
+    text-align: center;
+}

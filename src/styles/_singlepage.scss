@@ -1,3 +1,16 @@
-.modal {
-    @include modalStyle
+.moveXToRight {
+    padding-left: 90%;
+    padding-top: 1%;
+}
+
+.resumeButtonContainer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resumeButton {
+    display: inline-block;
+    padding: 4%;
+    
 }

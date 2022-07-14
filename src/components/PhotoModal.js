@@ -24,7 +24,7 @@ function PhotoModal({ projectInfo, setClickedProject, clickedProject, handleClos
   // }
 
   const nextSlide = () => {
-    console.log((current === length - 1 ? 0 : current + 1))
+    setCurrent((current === length - 1 ? 0 : current + 1))
   }
 
   const prevSlide = () => {
@@ -34,8 +34,8 @@ function PhotoModal({ projectInfo, setClickedProject, clickedProject, handleClos
   return (
     <>
 
-    <div className="photoModalMask">
-        <button onClick={handleClosePhotoModal}><span>  X  </span></button>
+    <div className="whiteModalMask">
+        <div className="photoModalButton"><button onClick={handleClosePhotoModal}><span>  X  </span></button></div>
       <div className="modal">
         <div className="slideshow-container">
           <div className="mySlides fade"></div>

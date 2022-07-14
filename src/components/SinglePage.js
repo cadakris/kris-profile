@@ -1,3 +1,4 @@
+import { Heart } from 'react-spinners-css';
 import React, { useState }  from 'react';
 import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
@@ -15,14 +16,28 @@ function SinglePage({setShowResume, handleCloseModal}) {
 
   return (
     <>
-    <div className="">
+       <div className="whiteModalMask">
       <div className="modal scroll">
-        <button onClick={handleCloseModal}><span>x</span></button> <button> <a href='/KristenResume070822.pdf' download><span>Click to download</span></a></button>
-        <Document file = "KristenResume070822.pdf" onLoadSuccess = {onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber}/>
+        <div className="resumeButtonContainer">
+          <div className="resumeButton"><button> <a href='/KristenResume070822.pdf' download><span>download</span></a></button></div>
+          <div className="resumeButton"><button onClick={handleCloseModal}><span>{""}x{""}</span></button></div>
+        </div>
+
+        <Document file = "KristenResume070822.pdf" onLoadSuccess = {onDocumentLoadSuccess} 
+          loading={<div className="heartsContainer">
+          <Heart color="#f6e6e0" size={100} />
+          <Heart color="#f6e6e0" size={100} />
+          <Heart color="#f6e6e0" size={100} />
+          <p> Loading </p>
+          </div>}>
+          <Page 
+            size ="A4" 
+            pageNumber={pageNumber}
+          />
         </Document>
       </div>
-    </div>
+      </div>
+
     </>
   )
 }

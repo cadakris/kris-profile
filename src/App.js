@@ -24,6 +24,8 @@ function App() {
     // body.classList.add("modal-backgroud-mask")
     // body.classList.add("photoModalMask")
   }, [isOpen])
+
+  //LOADING
  
 
 

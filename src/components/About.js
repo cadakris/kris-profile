@@ -5,6 +5,7 @@ import SinglePage from './SinglePage'
 
 function About({showResume, setShowResume, isOpen, setIsOpen}) {
 
+
   function handleCloseModal () {
     setShowResume((showResume) => !showResume)
     setIsOpen(!isOpen)
@@ -15,7 +16,7 @@ function About({showResume, setShowResume, isOpen, setIsOpen}) {
     setIsOpen(!isOpen)
   }
 
-  //TARGETING THE BODY TO HIDE SCROLLBAR AND ADD MODAL CLASSNAME 
+
 
 
   return (
