@@ -18,6 +18,12 @@ function Footer() {
       >
         <FaGithub className="footerIcon" />
       </a>{" "}</p>
+      <p>Art by 
+        <a
+          href="https://heatherday.com/"
+          target="_blank"
+          rel="noreferrer"
+        >Heather Day</a></p>
     </span>
     </div>
       </header>

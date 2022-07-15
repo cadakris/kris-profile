@@ -21,7 +21,7 @@ function About({showResume, setShowResume, isOpen, setIsOpen}) {
 
   return (
     <>
-    <section className="about">
+    <section className="about" id="about">
       <header className="headerColor">
         <h2>About</h2>
       </header>

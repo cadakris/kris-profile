@@ -10,7 +10,7 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setSho
 
   return (
     <>
-      <section className="projects">
+      <section className="projects" id="projects">
         <header className="headerColor">
           <h2>Projects</h2>
         </header>

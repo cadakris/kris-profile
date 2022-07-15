@@ -7,12 +7,19 @@ function Header() {
 
   return (
     <>
-        {/* <div className="headerBackgroud"> */}
+        <div className="headerBackgroud">
         <section className="header">
           <header id="noColorHeader">
           <div className="headerLeftStyle">
           <h1>
             <span className="titleFirstName">kristen</span>
+
+              <div className="webLinksContainer">
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a className="verticalLine" href="#contact">Contact</a>
+            </div> 
+
             <div className="iconContainer">
               <a
                 className="headerIcons"
@@ -53,12 +60,14 @@ function Header() {
           <div className="headerAdjectiveContainer">
           <h1>
           <span className="titleLastName">cadacio</span><br/>
-            <div className="anotherDiv"><span className="titleJob">software developer</span><br/></div>
+            <div className="anotherDiv">
+              
+            </div>
             <div className="wrapper">
-            <span className="titleJob">and </span>
+            <span className="titleJob">software developer and </span>
               <div className="adjectiveWords">
-                <span className="flipAdjective">a plant mom</span>
-                <span className="flipAdjective">hiker</span>
+                <span className="flipAdjective">plant mom</span>
+                <span className="flipAdjective">avid hiker</span>
                 <span className="flipAdjective">coffee shop addict</span>
                 <span className="flipAdjective">thrifter</span>
                 <span className="flipAdjective">ice cream lover</span>
@@ -68,7 +77,7 @@ function Header() {
           </div>
         </div>
         </section>
-        {/* </div> */}
+        </div>
     </>
   )
 }
