@@ -9,40 +9,38 @@ function DemoModal({ handleCloseModal, projectInfo }) {
   useEffect (() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 2000);
   }, [])
 
   return (
     <>
     {loading ? 
-    <div className="modal-background-mask">
-      <div className="modalDemo scroll">
-        <div className="loadingContainer">
-          <Heart color="#f6e6e0" size={80} />
-          <Heart color="#f6e6e0" size={80} />
-          <Heart color="#f6e6e0" size={80} /><br/>
-          <p> Loading </p>
-          </div>
-      </div>
-    </div>
-    
-    
-    : 
-    <div className="modal-background-mask">
-      <div className="modalDemo scroll">
-        <div className="demoButton"><button onClick={handleCloseModal}><span>x</span></button></div>
-        <div className="h_iframe">
-            <iframe className="demoVideo"
-                src={projectInfo.videoSource}
-                frameBorder="0"
-                height="400"
-                width="2"
-                allowFullScreen
-            />
+      <div className="modal-background-mask">
+        <div className="modalDemo scroll">
+          <div className="loadingContainer">
+            <Heart color="#f6e6e0" size={80} />
+            <Heart color="#f6e6e0" size={80} />
+            <Heart color="#f6e6e0" size={80} /><br/>
+            <p> Loading </p>
+            </div>
         </div>
       </div>
-    </div>
-} 
+    : 
+      <div className="modal-background-mask">
+        <div className="modalDemo scroll">
+          <div className="demoButton"><button onClick={handleCloseModal}><span>x</span></button></div>
+          <div className="h_iframe">
+              <iframe className="demoVideo"
+                  src={projectInfo.videoSource}
+                  frameBorder="0"
+                  height="400"
+                  width="2"
+                  allowFullScreen
+              />
+          </div>
+        </div>
+      </div>
+    } 
     </>
   )
 }

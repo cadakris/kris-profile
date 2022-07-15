@@ -25,9 +25,6 @@ function App() {
     // body.classList.add("photoModalMask")
   }, [isOpen])
 
-  //LOADING
- 
-
 
   return (
   <>

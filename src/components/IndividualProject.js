@@ -2,7 +2,7 @@ import React from 'react'
 import PhotoModal from './PhotoModal'
 import DemoModal from './DemoModal'
 
-function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setShowPhotos, projectInfo, setClickedProject, clickedProject, setIsPhotoModalOpen, isPhotoModalOpen }) {
+function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setShowPhotos, projectInfo, setClickedProject, clickedProject }) {
 
     function handleCloseModal () {
         setShowDemo((showDemo) => !showDemo)
@@ -29,7 +29,6 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
 
   return (
     <>
-        <h2> Projects I have worked on! </h2>
               <section key={projectInfo.id}>
                 <header className="projectHeader">
                   <div className="projectDescription">

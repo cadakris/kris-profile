@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { send } from 'emailjs-com'
 import emailjs from 'emailjs-com'
 
 function Contact() {
@@ -23,7 +22,7 @@ function Contact() {
       'L5nQ0nqKIO5xA9rZ2'
     )
     .then((res) => {
-      console.log('SUCCESS!', res.status, res.text)
+      alert('Your Email Has Been Sent!', res.status, res.text)
     })
     .catch((err) => {
       console.log('FAILED...', err)
@@ -70,7 +69,6 @@ function Contact() {
         </form>
       </div>
     </div>
-
    </section>
   )
 }

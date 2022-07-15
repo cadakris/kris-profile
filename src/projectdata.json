@@ -7,7 +7,7 @@
         "videoSource": "https://www.youtube.com/embed/GNSIfYRg6YA",
         "imageSource": 
             [
-            "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657486848/Profile%20Photos/ReciPrep_MainPage_1_ebwg9d.jpg",
+            "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657924345/Profile%20Photos/ReciPrep_MainPage_3_hmyin1.jpg",
             "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657558076/Profile%20Photos/ReciPrep_RecipeDragNDrop_1_dzc6kg.jpg",
             "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657558133/Profile%20Photos/ReciPrep_MainPage_2_hccsmv.jpg",
             "https://res.cloudinary.com/dnr8dgxt2/image/upload/v1657558198/Profile%20Photos/ReciPrep_RecipePage_2_xyj5of.jpg",
@@ -18,7 +18,7 @@
     },
     {
         "id": 2,
-        "title": "BookBook",
+        "title": "wtf",
         "description": "An application that allows users to search for books and organize them into list",
         "technologies": "HTML | CSS | Ruby on Rails | ReactJS",
         "videoSource": "https://www.youtube.com/embed/wwTBl4AuHDs",

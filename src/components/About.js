@@ -1,11 +1,6 @@
-import React, { useEffect } from 'react'
-// import ResumeModal from './ResumeModal'
 import SinglePage from './SinglePage'
 
-
 function About({showResume, setShowResume, isOpen, setIsOpen}) {
-
-
   function handleCloseModal () {
     setShowResume((showResume) => !showResume)
     setIsOpen(!isOpen)
@@ -15,10 +10,6 @@ function About({showResume, setShowResume, isOpen, setIsOpen}) {
     setShowResume(!showResume)
     setIsOpen(!isOpen)
   }
-
-
-
-
   return (
     <>
     <section className="about" id="about">
