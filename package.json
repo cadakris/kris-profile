@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env GENERATE_SOURCEMAP=false react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +42,8 @@
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

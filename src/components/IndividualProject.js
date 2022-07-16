@@ -41,7 +41,7 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
                     {showDemo ? null : <DemoModal handleCloseModal={handleCloseModal} projectInfo={projectInfo} />}
                   </li>
                   <li className="projectList">
-                    <button><a target="_blank" href={projectInfo.githubLink}><span className="projectSpan">Github</span></a></button>
+                    <button><a target="_blank" href={projectInfo.githubLink} rel="noreferrer"><span className="projectSpan">Github</span></a></button>
                   </li>
                 </ul>
                 </header>
@@ -52,11 +52,11 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
                 {showPhotos ? null : <PhotoModal handleClosePhotoModal={handleClosePhotoModal} clickedProject={clickedProject}/>}
                     {projectInfo.imageSource.map((image, index) => {
                       if (index === 0) {
-                        return (<img className="landscapeImg" src={image} onClick={handlePhotoClick} key={index}></img>)
+                        return (<img className="landscapeImg" src={image} onClick={handlePhotoClick} key={index} alt={projectInfo.title}></img> )
                       } else {
                         return (
                           <div className="imgContainer" key={image} onClick={handlePhotoClick}>
-                            <img src={image}></img>
+                            <img src={image} alt={clickedProject.title}></img>
                           </div>
                         )
                       }

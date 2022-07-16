@@ -32,6 +32,7 @@ function DemoModal({ handleCloseModal, projectInfo }) {
           <div className="h_iframe">
               <iframe className="demoVideo"
                   src={projectInfo.videoSource}
+                  title={projectInfo.title}
                   frameBorder="0"
                   height="400"
                   width="2"
