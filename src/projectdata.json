@@ -18,7 +18,7 @@
     },
     {
         "id": 2,
-        "title": "wtf",
+        "title": "BookBook",
         "description": "An application that allows users to search for books and organize them into list",
         "technologies": "HTML | CSS | Ruby on Rails | ReactJS",
         "videoSource": "https://www.youtube.com/embed/wwTBl4AuHDs",

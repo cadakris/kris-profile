@@ -42,3 +42,25 @@ button {
     margin-top: 15%;
     text-align: center;
 }
+
+.modal {
+    @include modal;
+    max-width: 100vw;
+}
+
+.moveXToRight {
+    padding-left: 90%;
+    padding-top: 1%;
+}
+
+.resumeButtonContainer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resumeButton {
+    display: inline-block;
+    padding: 4%;
+    
+}

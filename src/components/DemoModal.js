@@ -27,8 +27,8 @@ function DemoModal({ handleCloseModal, projectInfo }) {
       </div>
     : 
       <div className="modal-background-mask">
-        <div className="modalDemo scroll">
           <div className="demoButton"><button onClick={handleCloseModal}><span>x</span></button></div>
+        <div className="modalDemo scroll">
           <div className="h_iframe">
               <iframe className="demoVideo"
                   src={projectInfo.videoSource}

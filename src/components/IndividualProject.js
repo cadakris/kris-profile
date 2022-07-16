@@ -16,13 +16,11 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
 
       function handleClosePhotoModal () {
         setShowPhotos((showPhotos) => !showPhotos)
-        // setIsPhotoModalOpen(!isPhotoModalOpen)
         setIsOpen(!isOpen)
     }
     
       const handlePhotoClick = () => {
         setShowPhotos(!showPhotos)
-        // setIsPhotoModalOpen(!isPhotoModalOpen)
         setClickedProject(projectInfo)
         setIsOpen(!isOpen)
       }
