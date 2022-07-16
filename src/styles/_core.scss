@@ -86,7 +86,7 @@ h2 {
     box-shadow: 0 10rem 10rem 0 rgb(0 0 0 / 50%);
   }
 
-//THIS IS FOR VIDEO MODAL AND RESUME MODAL
+  /// THIS IS FOR VIDEO MODAL AND RESUME MODAL
 .scroll {
   padding: 10px;
   max-height: 90vh;
@@ -94,7 +94,7 @@ h2 {
   overflow-y: auto;
 }
 
-//VERTICAL PAGE LINE
+ /// VERTICAL PAGE LINE
 .header:after {
   content: "";
   position: absolute;
@@ -118,19 +118,19 @@ h2:after {
 }
 
 // ------------------- MIXINS
-@mixin buttonStyle {
-    text-decoration: none;
-    border: 2px solid #010100;
-    padding: 8px;
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    display: inline-block;
-    background-color: white;
-}
 
-@mixin beforeButtonStyle {
+@mixin button {
+  text-decoration: none;
+  border: 2px solid #010100;
+  padding: 8px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+
+  &::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -142,27 +142,33 @@ h2:after {
     transition: all 0.5s ease-in-out;
     transform: scaleY(1);
     color: black;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    /*100% plus double the times left values*/
+    height: calc(100% + 10px);
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
 }
 
-@mixin beforeHoverButton {
+  &:hover::after {
+    transform: scaleX(0);
+  }
+
+  &:hover::before {
   transform: scaleY(0);
 }
 
-@mixin afterButtonStyle {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: -5px;
-  width: calc(100% - 10px);
-  /*100% plus double the times left values*/
-  height: calc(100% + 10px);
-  background-color: #ffffff;
-  transition: all 0.5s ease-in-out;
-  transform: scaleX(1);
-}
-
-@mixin afterHoverButton {
-  transform: scaleX(0);
+  span {
+      position: relative;
+      z-index: 3; 
+  }
 }
 
 @mixin centering {
@@ -181,8 +187,7 @@ h2:after {
 }
 
 @mixin contentPadding {
-  padding-top: 8%;
-  padding-bottom: 2%;
+  padding: 8% 8% 2%;
 }
 
 @mixin modal {
