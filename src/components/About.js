@@ -14,7 +14,7 @@ function About({showResume, setShowResume, isOpen, setIsOpen}) {
     <>
     <section className="collapse" id="about">
       <header className="headerColor">
-        <h2>About</h2>
+        <h2 className="mainSideHeaer">About</h2>
       </header>
 
       <div className="content">

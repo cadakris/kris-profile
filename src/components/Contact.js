@@ -32,7 +32,7 @@ function Contact() {
   return (
    <section className="collapse" id="contact">
     <header className="headerColor">
-      <h2>Let's Connect</h2>
+      <h2 className="mainSideHeaer">Let's Connect</h2>
     </header>
 
     <div className="content contentContact">

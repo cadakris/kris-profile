@@ -5,19 +5,21 @@ function Footer() {
   return (
     <>
     <footer>
-    <section>
+    <section className="collapse">
       <header className="headerColor">
       <div className="footerSection">
       <span>
-      <p>© Kristen Cadacio. All rights reserved.</p>
-      <p>Built and Designed by Kristen Cadacio{" "}
-      <a
-        href="https://github.com/cadakris"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FaGithub className="footerIcon" />
-      </a>{" "}</p>
+      <p>© Kristen Cadacio 2022.{" "}
+        <a
+          href="https://github.com/cadakris"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithub className="footerIcon" />
+        </a>{" "}
+      </p> 
+      <p>All rights reserved.</p>
+
       <p>Art by 
         <a
           href="https://heatherday.com/"
@@ -27,6 +29,9 @@ function Footer() {
     </span>
     </div>
       </header>
+
+      <div className="content">
+      </div>
     </section>
     </footer>
     </>

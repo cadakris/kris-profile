@@ -9,7 +9,7 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setSho
     <>
       <section className="collapse" id="projects">
         <header className="headerColor">
-          <h2>Projects</h2>
+          <h2 className="mainSideHeaer">Projects</h2>
         </header>
         <div className="content">
           <h2> Projects I have worked on! </h2> 

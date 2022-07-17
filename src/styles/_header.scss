@@ -128,7 +128,7 @@ h1 {
   .wrapper {
     height: 50px;
     padding-top: 3%;
-    padding-left: 12%;
+    // padding-left: 12%;
     display: flex;
     width: 100%;
     box-sizing: content-box;
@@ -192,6 +192,9 @@ h1 {
     }
     @include devices(small541) {
       min-height: 20vh;
+    }
+    @include devices(mobile) {
+      min-height: 15vh;
     }
   }
 
@@ -261,6 +264,9 @@ h1 {
   background: white;
   width: 13%;
   height: 3px;
+  @include devices(medium958) {
+    width: 0px;
+  }
 }
 
 svg {
@@ -307,12 +313,3 @@ svg {
   }
  }
 
- .collapse {
-  @include devices(medium958) {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-areas: 
-      'header'
-      'footer';
-  }
-}

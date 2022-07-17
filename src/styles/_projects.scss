@@ -2,6 +2,10 @@
     text-align: right;
     width: 50%;
     padding-left: 30%;
+    @include devices(medium958) {
+      text-align: left;
+      padding-left: 10%;
+    }
 }
 
 button .span {
@@ -12,6 +16,10 @@ button .span {
 .buttonContainer {
     width: 80%;
     text-align: right;
+    @include devices(medium958) {
+      width: 100%;
+      text-align: center;
+    }
 }
 
 .projectList {
@@ -83,7 +91,10 @@ margin-top: 2%;
     flex-wrap: wrap;
     // width: calc(100% + 1.25rem);
     width: 100%;
-    margin-bottom: 15%;
+    margin-bottom: 12%;
+    @include devices(medium958) {
+      margin-bottom: 8%;
+    }
 }
 
 .landscapeImg {
@@ -91,24 +102,31 @@ margin-top: 2%;
     margin-left:auto;
     margin-right:auto;
     width: 80%;
-    border: rgb(236, 236, 236) 3px solid;
+    border: rgb(236, 236, 236) 1px solid;
 }
 
 .imgContainer {
     width: calc(50% - 2%);
-    text-align: center;
     display:block;
     margin-left:auto;
     margin-right:auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    @include devices(medium958) {
+      width: 80%;
+    }
 }
 
 .imgContainer img {
     width: 100%;
-    padding-bottom: 6%;
-    padding-top: 6%;
     display:block;
     margin-left:auto;
     margin-right:auto;
+    outline: rgb(236, 236, 236) 1px solid;
+    @include devices(medium958) {
+      padding: 0;
+      margin-top: 5%
+    }
 }
 
 // ------------------- DEMO/VIDOES

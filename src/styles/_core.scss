@@ -15,112 +15,51 @@ $headerAdjColor: #dc859a;
 $secondaryColor: white;
 $lightPinkColor: #f6e6e0;
 
-// ------------------- GLOBAL STYLES
-*{
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
+// ------------------- MEDIA QUERRIES
+@mixin devices($breakpoint) { //the name of the mixin is devices
+  
+  @if $breakpoint == large1002 {
+    @media only screen and (max-width: 1002px) {
+      @content;
+    }
   }
-
-  .mainContainer {
-    position: relative;
+  
+  @if $breakpoint == large1071 {
+    @media only screen and (max-width: 1071px) {
+      @content;
+    }
   }
-
-  ///BELOW CREATES SECTIONS
-  section {
-    display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-areas: 
-      'header content'
-      'footer content';
+  
+  @if $breakpoint == medium958 {
+    @media only screen and (max-width: 958px) {
+      @content;
+    }
   }
-
-  a {
-    text-decoration: none;
-    color: black;
+  
+  @if $breakpoint == medium780 {    
+    @media only screen and (max-width: 780px) {
+      @content;
+    }
   }
-  ///BELOW SECTIONS MOVE THE CONTENT TO THE FAR LEFT
-  .mainContainer > section > .content > section {
-    left: calc(-50vw);
-    position: relative;
-}
-
-ul, li {
-  display: inline-block;
-}
-
-h3 {
-  font-family: "Epilogue", sans-serif;
-  size: 2em;
-  font-weight: bold;
-  padding-bottom: 3%;
-}
-
-header.headerColor {
-  background-color: $lightPinkColor;
-}
-
-h2 {
-  font: {
-    family: $h2HeaderFonts;
-    size: 2.5em;
+  
+  
+  @if $breakpoint == tablet {    
+    @media only screen and (max-width: 680px) {
+      @content;
+    }
   }
-  text-align: right;
-  padding-top: 6%;
-  letter-spacing: .1em;
-  padding-right: 14%;
-}
-
-// ------------------- GLOBAL STYLES FOR MODAL
-
-  ///MODAL BACKGROUND MASK FOR RESUME AND PHOTOS
-  .whiteModalMask {
-    transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgb(255,255,255, .5);
-    z-index: 2500;
-    box-shadow: 0 10rem 10rem 0 rgb(0 0 0 / 50%);
+  
+  @if $breakpoint == small541 {    
+    @media only screen and (max-width: 541px) {
+      @content;
+    }
   }
-
-  /// THIS IS FOR VIDEO MODAL AND RESUME MODAL
-.scroll {
-  padding: 10px;
-  max-height: 90vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
- /// VERTICAL PAGE LINE
-.header:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0.5%;
-  bottom: 0;
-  left: 43.5%;
-  border-left: 3px solid white;
-  // transform: translate(-50%);
-  // @include devices(medium958) {
-  //   z-index: -1;
-  // }
-} 
-
-//HORIZONAL PAGE LINE
-h2:after {
-  content: " ";
-  display: inline-block;
-  background: white;
-  width: 40%;
-  height: 3px;
-  // margin-left: 20%;
-  position: relative;
-  // @include devices(medium958) {
-  //   background: yellow;
-  // }
+  
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 481px) {
+      @content;
+    }
+  }
 }
 
 // ------------------- MIXINS
@@ -190,6 +129,10 @@ h2:after {
   }
   line-height: 1.3em;
   letter-spacing: .1em;
+  @include devices(medium958) {
+    font-size: .8em;
+    line-height: 1em;
+  }
 }
 
 @mixin contentPadding {
@@ -213,54 +156,164 @@ footer{
 
 .footerSection {
   margin-bottom: 3%;
+  @include devices(medium958) {
+    margin: 0;
+    font-size: .8em;
+  }
 }
 
-// ------------------- MEDIA QUERRIES
-@mixin devices($breakpoint) { //the name of the mixin is devices
+// ------------------- GLOBAL STYLES
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
 
-  @if $breakpoint == large1002 {
-    @media only screen and (max-width: 1002px) {
-      @content;
+  .mainContainer {
+    position: relative;
+  }
+
+  ///BELOW CREATES SECTIONS
+  section {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: 
+      'header content'
+      'footer content';
+  }
+
+  //?THIS IS SPECIFICALLY TARGETING THE SECTIONS EXCLUDING HEADER SECTIOM
+ .collapse {
+  @include devices(medium958) {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+      'header'
+      'contet'
+      'footer';
+  }
+}
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  ///BELOW SECTIONS MOVE THE CONTENT TO THE FAR LEFT
+  .mainContainer > section > .content > section {
+    left: calc(-50vw);
+    position: relative;
+    @include devices(medium958) {
+      left: 0vw;
     }
-  }
+}
 
-  @if $breakpoint == large1071 {
-    @media only screen and (max-width: 1071px) {
-      @content;
-    }
-  }
-  
-  @if $breakpoint == medium958 {
-    @media only screen and (max-width: 958px) {
-      @content;
-    }
-  }
+ul, li {
+  display: inline-block;
+}
 
-  @if $breakpoint == medium780 {    
-    @media only screen and (max-width: 780px) {
-      @content;
-    }
+h3 {
+  font-family: "Epilogue", sans-serif;
+  size: 2em;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+
+header.headerColor {
+  background-color: $lightPinkColor;
+  @include devices(medium958) {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-
-  @if $breakpoint == tablet {    
-  @media only screen and (max-width: 680px) {
-    @content;
+  @include devices(mobile) {
+    height:5vh;
   }
 }
 
-@if $breakpoint == small541 {    
-  @media only screen and (max-width: 541px) {
-    @content;
+h2.mainSideHeaer {
+  font: {
+    family: $h2HeaderFonts;
+    size: 2.5em;
+  }
+  text-align: right;
+  padding-top: 6%;
+  letter-spacing: .1em;
+  padding-right: 14%;
+  @include devices(medium958) {
+    padding: 0;
+    font-size: 2em;
+  }
+  @include devices(mobile) {
+    font-size:1.5em;
   }
 }
 
-@if $breakpoint == mobile {
-  @media only screen and (max-width: 481px) {
-    @content;
+h2 {
+  font: {
+    family: $mainTitleFont;
+    size: 1.5em;
+  }
+  text-align: right;
+  padding-top: 6%;
+  letter-spacing: .1em;
+  padding-right: 14%;
+  @include devices(medium958) {
+    padding: 0;
+    text-align: center;
+    margin:4%
+  }
+  @include devices(mobile) {
+    font-size: 1em;
   }
 }
+
+// ------------------- GLOBAL STYLES FOR MODAL
+
+  ///MODAL BACKGROUND MASK FOR RESUME AND PHOTOS
+  .whiteModalMask {
+    transition: opacity 0.5s ease, visibility 0.5s, z-index 0.5s;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,255,255, .5);
+    z-index: 2500;
+    box-shadow: 0 10rem 10rem 0 rgb(0 0 0 / 50%);
+  }
+
+  /// THIS IS FOR VIDEO MODAL AND RESUME MODAL
+.scroll {
+  padding: 10px;
+  max-height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-// at medium881, it should be collapsed into one column
-// the dividers should go away
+ /// VERTICAL PAGE LINE
+.header:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0.5%;
+  bottom: 0;
+  left: 43%;
+  border-left: 3px solid white;
+  @include devices(medium958) {
+    z-index: -1000;
+  }
+} 
+
+//HORIZONAL PAGE LINE
+h2:after {
+  content: " ";
+  display: inline-block;
+  background: white;
+  width: 40%;
+  height: 3px;
+  position: relative;
+  @include devices(medium958) {
+    width: 0;
+  }
+}

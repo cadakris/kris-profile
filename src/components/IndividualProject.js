@@ -27,7 +27,7 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
 
   return (
     <>
-              <section key={projectInfo.id}>
+              <section key={projectInfo.id} className="collapse">
                 <header className="projectHeader">
                   <div className="projectDescription">
                   <h3>{projectInfo.title}</h3>
@@ -45,7 +45,7 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
                   </li>
                 </ul>
                 </header>
-
+                
               <div className="content">
                 <div className="gallery">
                 
