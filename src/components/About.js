@@ -12,7 +12,7 @@ function About({showResume, setShowResume, isOpen, setIsOpen}) {
   }
   return (
     <>
-    <section className="about" id="about">
+    <section className="collapse" id="about">
       <header className="headerColor">
         <h2>About</h2>
       </header>

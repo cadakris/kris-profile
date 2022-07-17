@@ -30,7 +30,7 @@ function Contact() {
   }
 
   return (
-   <section className="contact" id="contact">
+   <section className="collapse" id="contact">
     <header className="headerColor">
       <h2>Let's Connect</h2>
     </header>

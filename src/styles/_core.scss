@@ -104,6 +104,9 @@ h2 {
   left: 43.5%;
   border-left: 3px solid white;
   // transform: translate(-50%);
+  // @include devices(medium958) {
+  //   z-index: -1;
+  // }
 } 
 
 //HORIZONAL PAGE LINE
@@ -115,6 +118,9 @@ h2:after {
   height: 3px;
   // margin-left: 20%;
   position: relative;
+  // @include devices(medium958) {
+  //   background: yellow;
+  // }
 }
 
 // ------------------- MIXINS
@@ -208,3 +214,53 @@ footer{
 .footerSection {
   margin-bottom: 3%;
 }
+
+// ------------------- MEDIA QUERRIES
+@mixin devices($breakpoint) { //the name of the mixin is devices
+
+  @if $breakpoint == large1002 {
+    @media only screen and (max-width: 1002px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large1071 {
+    @media only screen and (max-width: 1071px) {
+      @content;
+    }
+  }
+  
+  @if $breakpoint == medium958 {
+    @media only screen and (max-width: 958px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == medium780 {    
+    @media only screen and (max-width: 780px) {
+      @content;
+    }
+  }
+
+
+  @if $breakpoint == tablet {    
+  @media only screen and (max-width: 680px) {
+    @content;
+  }
+}
+
+@if $breakpoint == small541 {    
+  @media only screen and (max-width: 541px) {
+    @content;
+  }
+}
+
+@if $breakpoint == mobile {
+  @media only screen and (max-width: 481px) {
+    @content;
+  }
+}
+}
+
+// at medium881, it should be collapsed into one column
+// the dividers should go away

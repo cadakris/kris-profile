@@ -25,7 +25,6 @@ function App() {
     // body.classList.add("photoModalMask")
   }, [isOpen])
 
-
   return (
   <>
     <div className="mainContainer">

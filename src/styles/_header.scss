@@ -12,6 +12,30 @@
   }
 }
 
+@mixin h1MediaBreakpoints {
+  @include devices(large1071) {
+    font-size: 3.8em;
+  }
+  
+  @include devices(medium958) {
+    font-size: 2.7em;
+  }
+
+  @include devices(tablet) {
+    font-size: 2.5em;
+  }
+
+  @include devices(small541) {
+    font-size: 2em;
+  }
+
+
+  @include devices(mobile) {
+    font-size: 1.2em;
+  }
+}
+
+
 // ------------------- CONTAINERS
 .headerLeftStyle {
   width: 100%;
@@ -27,6 +51,9 @@
 .headerAdjectiveContainer {
   padding-top: 30%;
   padding-right: 5%;
+  @include devices(medium958) {
+    padding-top:25%;
+  }
   // text-align: center;
   // width: 100%;
 }
@@ -41,12 +68,16 @@ h1 {
     position: relative;
   
     .titleFirstName {
-      @include h1NameFont;
       padding-right: 25%;
+      @include h1NameFont;
+      @include h1MediaBreakpoints;
     }
+
 
     .titleLastName {
       @include h1NameFont;
+      @include h1MediaBreakpoints;
+      padding-left: 3%;
     }
 
     span.flipAdjective{
@@ -62,6 +93,15 @@ h1 {
         size: 1.4em;
         family: 'Sacramento', cursive;
       }
+      @include devices(large1002) {
+        font-size: 1em;
+      }
+      @include devices(medium780) {
+        font-size: 1em;
+      }
+      @include devices(medium780) {
+        font-size: .6em;
+      }
     }
 
     .titleJob {
@@ -73,18 +113,31 @@ h1 {
         family: $headerFont;
         size: 1em;
       }
+      @include devices(large1002) {
+        font-size: .8em;
+      }
+      @include devices(medium780) {
+        font-size: .7em;
+      }
+      @include devices(small541) {
+        font-size: .5em;
+      }
     }
   }
   
   .wrapper {
     height: 50px;
     padding-top: 3%;
-    padding-left: 5%;
+    padding-left: 12%;
     display: flex;
     width: 100%;
     box-sizing: content-box;
     .adjectiveWords {
       overflow: hidden;
+    }
+    @include devices(medium780) {
+      height: 40px;
+      padding-left: 1%;
     }
   }
   
@@ -123,26 +176,40 @@ h1 {
   .headerBackgroud {
     background-image: url(https://res.cloudinary.com/dnr8dgxt2/image/upload/v1656827897/heather-day-art-11_nucjqz.jpg);
     background-repeat: no-repeat;
-    background-position: relative;
     background-size: cover;
-    display: absolute;
-    flex-direction: column;
     width: 100%;
+    min-height: 60vh;
     display: block;
     margin: auto;
-    height: 60vh
+    flex-direction: column; 
+    // background-position: relative;
+    // display: absolute;
+    @include devices(large1071) {
+      min-height: 45vh;
+    }
+    @include devices(medium958) {
+      min-height: 30vh;
+    }
+    @include devices(small541) {
+      min-height: 20vh;
+    }
   }
 
   // ------------------- ICON SECTION
   .iconContainer {
-    margin-top: 25px;
+    margin-top: 5%;
     padding-right: 23%;
     .headerIcons {
       color: black;
       padding-right: 15px;
       text-align: right;
     }
-
+    @include devices(medium958) {
+      margin-top: 3%;
+    }
+    @include devices(small541) {
+      margin-top: 1%;
+    }
   }
 
   .headerIcons  {
@@ -162,18 +229,29 @@ h1 {
   width: 89%;
   text-align: right;
   padding-top: 2%;
-    font: {
-      family: $textFont;
-      size: 1em;
-    }
 
     a {
       padding:3%;
       color: black;
+      font: {
+        family: $textFont;
+        size: 1em;
+      }
+      @include devices(large1071) {
+        font-size: .7em;
+      }
+
+      @include devices(tablet) {
+        font-size: .5em;
+      }
     }
 
     a:hover {
       color: #dc859a;
+    }
+    
+    @include devices(tablet) {
+      padding-top: 1%;
     }
 }
 
@@ -183,6 +261,13 @@ h1 {
   background: white;
   width: 13%;
   height: 3px;
+}
+
+svg {
+  @include devices(medium958) {
+    width: 5%;
+    height: 5%
+  }
 }
 
   
@@ -221,3 +306,13 @@ h1 {
    transform: translate(0px);
   }
  }
+
+ .collapse {
+  @include devices(medium958) {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+      'header'
+      'footer';
+  }
+}
