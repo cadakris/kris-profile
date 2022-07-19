@@ -16,7 +16,7 @@ function App() {
   // const [isPhotoModalOpen, setIsPhotoModalOpen] = useState(true)
   const [showDemo, setShowDemo] = useState(true)
   const [showPhotos, setShowPhotos] = useState(true)
-  const [projectDetails, setProjectDetails] = useState([...ProjectData])
+  const [projectDetails] = useState([...ProjectData])
 
   useEffect(() => {
     const body = document.querySelector('body');

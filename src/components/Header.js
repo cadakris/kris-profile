@@ -29,7 +29,7 @@ function Header() {
                   className="headerIcons"
                   href="https://github.com/cadakris"
                   target='_blank'
-                  rel="noopener"
+rel="noopener noreferrer"
                   aria-label='Github'
                 > <AiFillGithub size={30}/>
                 </a>
@@ -38,7 +38,7 @@ function Header() {
                     className="headerIcons"
                     href="https://www.linkedin.com/in/kristen-cadacio-408b3321/"
                     target='_blank'
-                    rel="noopener"
+                    rel="noopener noreferrer"
                     aria-label='LinkedIn'
                   ><BsLinkedin size={30}/>
                 </a>
@@ -47,7 +47,7 @@ function Header() {
                   className="headerIcons"
                   href="https://medium.com/@kriscadacio"
                   target='_blank'
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   aria-label='Medium'
                 ><AiOutlineMedium size={30} />
                 </a>

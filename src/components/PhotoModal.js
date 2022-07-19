@@ -26,7 +26,7 @@ function PhotoModal({ clickedProject, handleClosePhotoModal }) {
                 {clickedProject.imageSource.map((image, index )=> {
                         return (
                           <div className={index === current ? 'slide active': 'slide'}  key={index}>
-                            {index === current && (<img className="modalImage" src={image}></img>)}
+                            {index === current && (<img className="modalImage" src={image} alt="Project"></img> )}
                           </div>
                           )
                       })}
