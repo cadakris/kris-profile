@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Contact() {
 
   const [toSend, setToSend] = useState({
@@ -9,9 +11,23 @@ function Contact() {
     message: '',
   })
 
+  const [toastMessage, setToastMessage] = useState("")
+
   const handleInputChanges = (e) => {
     setToSend({...toSend, [e.target.name]: e.target.value})
   }
+
+  const CloseButton = ({ closeToast }) => (
+    <button className="buttonToast" onClick={closeToast}><span>x
+      </span></button>
+  );
+
+  
+  const notify = () => {
+    toast(toastMessage)
+  }
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,10 +38,10 @@ function Contact() {
       'L5nQ0nqKIO5xA9rZ2'
     )
     .then((res) => {
-      alert('Your Email Has Been Sent!', res.status, res.text)
+      setToastMessage('Your Email Has Been Sent!')
     })
     .catch((err) => {
-      console.log('FAILED...', err)
+      console.log(err)
     })
   }
 
@@ -33,6 +49,7 @@ function Contact() {
    <section className="collapse" id="contact">
     <header className="headerColor">
       <h2 className="mainSideHeaer">Let's Connect</h2>
+      <p>Email Address: kriscadacio@gmail.com</p>
     </header>
 
     <div className="content contentContact">
@@ -63,7 +80,13 @@ function Contact() {
             value={toSend.message}
             onChange={handleInputChanges}
           /><br/>
-                    <button  type="submit"><span>Submit</span></button>
+              <button onClick={notify} type="submit"><span>Submit</span></button>
+              <ToastContainer 
+                position="top-center"
+                autoClose={1500}
+                toastClassName="modifiedToast"
+                closeButton={CloseButton}
+              />
           </div>
 
         </form>
