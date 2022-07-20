@@ -1,10 +1,9 @@
 import { Heart } from 'react-spinners-css';
 import React, { useState, useEffect} from 'react'
 
-function DemoModal({ handleCloseModal, projectInfo }) {
+function DemoModal({ handleCloseModal, projectInfo, clickedDemo }) {
 
   const [loading, setLoading] = useState (true)
-
 
   useEffect (() => {
     setTimeout(() => {
@@ -25,14 +24,14 @@ function DemoModal({ handleCloseModal, projectInfo }) {
             </div>
         </div>
       </div>
-    : 
+    :
       <div className="modal-background-mask">
           <div className="demoButton"><button onClick={handleCloseModal}><span>x</span></button></div>
         <div className="modalDemo scroll">
           <div className="h_iframe">
               <iframe className="demoVideo"
-                  src={projectInfo.videoSource}
-                  title={projectInfo.title}
+                  src={clickedDemo}
+                  title="Demo"
                   frameBorder="0"
                   height="400"
                   width="2"

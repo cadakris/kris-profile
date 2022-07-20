@@ -2,7 +2,7 @@ import React from 'react'
 import PhotoModal from './PhotoModal'
 import DemoModal from './DemoModal'
 
-function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setShowPhotos, projectInfo, setClickedProject, clickedProject }) {
+function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setShowPhotos, projectInfo, setClickedProject, clickedProject, clickedDemo, setClickedDemo }) {
 
     function handleCloseModal () {
         setShowDemo((showDemo) => !showDemo)
@@ -11,8 +11,11 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
 
       const handleClick = () => {
         setShowDemo(!showDemo)
+        setClickedDemo(projectInfo.videoSource)
         setIsOpen(!isOpen)
       }
+
+
 
       function handleClosePhotoModal () {
         setShowPhotos((showPhotos) => !showPhotos)
@@ -38,7 +41,7 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
                 <ul className="buttonContainer">
                   <li className="projectList">
                     <button onClick={handleClick}><span className="projectSpan">Demo</span></button>
-                    {showDemo ? null : <DemoModal handleCloseModal={handleCloseModal} projectInfo={projectInfo} />}
+                    {showDemo ? null : <DemoModal handleCloseModal={handleCloseModal} projectInfo={projectInfo} clickedDemo={clickedDemo}/>}
                   </li>
                   <li className="projectList">
                     <button><a target="_blank" href={projectInfo.githubLink} rel="noreferrer"><span className="projectSpan">Github</span></a></button>

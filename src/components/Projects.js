@@ -4,6 +4,7 @@ import IndividualProject from './IndividualProject'
 function Projects({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setShowPhotos, projectDetails, isPhotoModalOpen, setIsPhotoModalOpen}) {
 
   const [clickedProject, setClickedProject] = useState({})
+  const [clickedDemo, setClickedDemo] = useState({})
 
   return (
     <>
@@ -23,6 +24,8 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setSho
                   setIsOpen={setIsOpen}
                   clickedProject={clickedProject}
                   setClickedProject={setClickedProject}
+                  setClickedDemo={setClickedDemo}
+                  clickedDemo={clickedDemo}
                   showPhotos={showPhotos}
                   setShowPhotos={setShowPhotos}
                   setIsPhotoModalOpen={setIsPhotoModalOpen}
