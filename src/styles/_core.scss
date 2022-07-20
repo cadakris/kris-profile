@@ -254,13 +254,11 @@ h2 {
     family: $mainTitleFont;
     size: 1.5em;
   }
-  text-align: right;
+  text-align: center;
   padding-top: 6%;
   letter-spacing: .1em;
-  padding-right: 14%;
   @include devices(medium958) {
     padding: 0;
-    text-align: center;
     margin:4%
   }
   @include devices(mobile) {

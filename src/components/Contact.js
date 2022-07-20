@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
-
+import { MdOutlineEmail } from 'react-icons/md'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function Contact() {
@@ -22,12 +22,14 @@ function Contact() {
       </span></button>
   );
 
-  
+  const toastId = React.useRef(null);
+
   const notify = () => {
-    toast(toastMessage)
+    if(! toast.isActive(toastId.current)) {
+      toastId.current =  toast(toastMessage)
+    }
+
   }
-
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +43,7 @@ function Contact() {
       setToastMessage('Your Email Has Been Sent!')
     })
     .catch((err) => {
-      console.log(err)
+      setToastMessage(err)
     })
   }
 
@@ -49,10 +51,22 @@ function Contact() {
    <section className="collapse" id="contact">
     <header className="headerColor">
       <h2 className="mainSideHeaer">Let's Connect</h2>
-      <p>Email Address: kriscadacio@gmail.com</p>
     </header>
 
-    <div className="content contentContact">
+    <div className="content">
+
+        <h2>Send a message! </h2> 
+
+      <section className="collapse">
+        <header>
+          <div className="contactInfo">
+            <p className="email"><span className="icon"><MdOutlineEmail size={25}/></span>kriscadacio@gmail.com</p>
+          </div>
+        </header>
+      </section>
+
+
+      <div className="content contactContent">
       <p>I am currently open to new freelance projects, full-time job opportunities, and funny memes!</p>
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
@@ -91,6 +105,7 @@ function Contact() {
 
         </form>
       </div>
+    </div>
     </div>
    </section>
   )

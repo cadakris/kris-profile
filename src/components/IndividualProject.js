@@ -15,8 +15,6 @@ function IndividualProject({ setShowDemo, showDemo, isOpen, setIsOpen, showPhoto
         setIsOpen(!isOpen)
       }
 
-
-
       function handleClosePhotoModal () {
         setShowPhotos((showPhotos) => !showPhotos)
         setIsOpen(!isOpen)

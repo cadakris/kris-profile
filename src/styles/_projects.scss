@@ -91,9 +91,9 @@ margin-top: 2%;
     flex-wrap: wrap;
     // width: calc(100% + 1.25rem);
     width: 100%;
-    margin-bottom: 12%;
+    margin-bottom: 8%;
     @include devices(medium958) {
-      margin-bottom: 8%;
+      margin-bottom: 5%;
     }
 }
 

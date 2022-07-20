@@ -29,7 +29,7 @@ function Header() {
                   className="headerIcons"
                   href="https://github.com/cadakris"
                   target='_blank'
-rel="noopener noreferrer"
+                  rel="noopener noreferrer"
                   aria-label='Github'
                 > <AiFillGithub size={30}/>
                 </a>
