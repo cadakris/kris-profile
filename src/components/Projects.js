@@ -13,7 +13,7 @@ function Projects({ setShowDemo, showDemo, isOpen, setIsOpen, showPhotos, setSho
           <h2 className="mainSideHeaer">Projects</h2>
         </header>
         <div className="content">
-          <h2> Projects I have worked on! </h2> 
+          {/* <h2> Projects I have worked on! </h2>  */}
             {projectDetails.map(projectInfo => {
               return <IndividualProject 
                   key={projectInfo.id}

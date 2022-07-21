@@ -55,19 +55,19 @@ function Contact() {
 
     <div className="content">
 
-        <h2>Send a message! </h2> 
+        {/* <h2>Send a message! </h2>  */}
 
       <section className="collapse">
         <header>
           <div className="contactInfo">
-            <p className="email"><span className="icon"><MdOutlineEmail size={25}/></span>kriscadacio@gmail.com</p>
+            <p className="email"><span className="icon"><MdOutlineEmail size={25}/>kriscadacio@gmail.com</span></p>
           </div>
         </header>
+      <p className="emailInfo">I am currently open to new freelance projects, full-time job opportunities, and funny memes!</p>
       </section>
 
 
       <div className="content contactContent">
-      <p>I am currently open to new freelance projects, full-time job opportunities, and funny memes!</p>
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
           <div className="halfContainer">

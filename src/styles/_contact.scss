@@ -69,14 +69,18 @@ textarea {
 
 .contactInfo {
     text-align: right;
-    padding-right: 28%;
-    padding-top: 10%;
+    padding-top: 18%;
+    padding-right: 17%;
 }
 
-.email {
+p.email {
     font-size: 1.3em;
 }
 
 .icon {
     padding-right: 3%;
+}
+
+section > p {
+    @include contentPadding
 }
