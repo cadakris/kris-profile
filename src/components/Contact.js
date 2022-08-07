@@ -50,24 +50,22 @@ function Contact() {
   return (
    <section className="collapse" id="contact">
     <header className="headerColor">
-      <h2 className="mainSideHeaer">Let's Connect</h2>
+      <h2 className="mainSideHeaer">Contact</h2>
     </header>
 
     <div className="content">
-
         {/* <h2>Send a message! </h2>  */}
 
       <section className="collapse">
-        <header>
-          <div className="contactInfo">
-            <p className="email"><span className="icon"><MdOutlineEmail size={25}/>kriscadacio@gmail.com</span></p>
+        <header className="projectHeader">
+          <div className="projectDescription">
+            <h3>Let's Connect!</h3>
+            <h3><span className="icon"><MdOutlineEmail size={25}/>kriscadacio@gmail.com</span></h3>
           </div>
         </header>
-      <p className="emailInfo">I am currently open to new freelance projects, full-time job opportunities, and funny memes!</p>
-      </section>
-
 
       <div className="content contactContent">
+      <p className="emailInfo">I am currently open to new freelance projects, full-time job opportunities, and funny memes!</p>
       <div className="formContainer">
         <form onSubmit={handleSubmit}>
           <div className="halfContainer">
@@ -102,10 +100,10 @@ function Contact() {
                 closeButton={CloseButton}
               />
           </div>
-
         </form>
       </div>
     </div>
+    </section>
     </div>
    </section>
   )

@@ -84,3 +84,22 @@ p.email {
 section > p {
     @include contentPadding
 }
+
+.projectDescription {
+    padding-top: 13%;
+    text-align: right;
+    width: 50%;
+    padding-left: 30%;
+    @include devices(medium958) {
+      text-align: left;
+      padding-left: 10%;
+    }
+}
+
+.emailInfo p{
+    @include textStyles;
+}
+
+.contactContent {
+    @include contentPadding;
+}
