@@ -19,11 +19,11 @@ function SinglePage({setShowResume, handleCloseModal}) {
       <div className="whiteModalMask">
        <div className="modal scroll">
         <div className="resumeButtonContainer">
-          <div className="resumeButton"><button> <a href='/KristenResume072122.pdf' download><span>download</span></a></button></div>
+          <div className="resumeButton"><button> <a href='/KristenCadacioResume.pdf' download><span>download</span></a></button></div>
           <div className="resumeButton"><button onClick={handleCloseModal}><span>x</span></button></div>
         </div>
 
-          <Document file = "KristenResume072122.pdf" onLoadSuccess = {onDocumentLoadSuccess} 
+          <Document file = "KristenCadacioResume.pdf" onLoadSuccess = {onDocumentLoadSuccess} 
             loading={<div className="heartsContainer">
               <Heart color="#f6e6e0" size={100} />
               <Heart color="#f6e6e0" size={100} />
