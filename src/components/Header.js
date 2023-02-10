@@ -69,11 +69,11 @@ function Header() {
                   <div className="wrapper dropIn2">
                     <span className="titleJob">software developer and </span>
                     <div className="adjectiveWords dropIn3">
-                        <span className="flipAdjective">plant mom</span>
-                        <span className="flipAdjective">avid hiker</span>
-                        <span className="flipAdjective">coffee addict</span>
-                        <span className="flipAdjective">thrifter</span>
-                        <span className="flipAdjective">tennis fan</span>
+                        <span className="flipAdjective">🌻 plant mom</span>
+                        <span className="flipAdjective">🥾 avid hiker</span>
+                        <span className="flipAdjective">☕ coffee addict</span>
+                        <span className="flipAdjective">🌏 thrifter</span>
+                        <span className="flipAdjective">🎾 tennis fan</span>
                       </div>
                   </div>
                 </div>
