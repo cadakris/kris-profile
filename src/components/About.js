@@ -19,12 +19,17 @@ function About({showResume, setShowResume, isOpen, setIsOpen}) {
 
       <div className="content">
         <div className="aboutContentText">
-        <p>Hi! I'm a software developer with experience utilizing frontend and backend technologies. With ten years of professional experience in the television industry, I successfully managed teams, created hours of content, and managed project life cycles from acquisition to customer delivery for various television production companies. I’m a voracious learner who is excited to utilize my newfound passion and skills to develop and create exciting products!</p><br/>
+        <br/>
+        <p>Hi I’m Kristen, an aspiring software developer! </p><br/>
 
-        <p>When I'm not coding, you can find me exploring exploring my city, reading, riding my bike, or hiking!</p><br/>
+        <p>I’m a driven and hardworking professional with a proven track record of creating and delivering hours of compelling stories, who is looking to take my newfound technical skills and past work experience to create meaningful applications and products that can help inspire, enhance, and bring joy to people’s lives. </p><br/>
 
-        <p>To learn more about my professional and technical experience, please check out my resume</p><br/>
+        <p>I’m a voracious learner who is eager to expand my technical knowledge and build upon the foundations of frontend and backend technologies that I already have. I’m excited to utilize my newfound passion for development and my technical skills to develop and create exciting products! </p><br/>
         
+        <p>When I’m not coding, you can find me exploring my city (which happens to be the best city in the world. No bias here!), checking out coffee shops, riding around town on my bike, binging the latest season of whatever television show is trending, and stuffing my face with delicious food! </p><br/>
+
+        <p>To learn more about my professional and technical experience, please download my resume below, shoot me a message below or just enjoy this portfolio I put together! </p><br/>
+
         </div>
         <div className="center">
         <button onClick={handleClick}><span>Resume</span></button>

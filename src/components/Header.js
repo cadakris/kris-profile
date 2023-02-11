@@ -72,7 +72,7 @@ function Header() {
                         <span className="flipAdjective">🌻 plant mom</span>
                         <span className="flipAdjective">🥾 avid hiker</span>
                         <span className="flipAdjective">☕ coffee addict</span>
-                        <span className="flipAdjective">🌏 thrifter</span>
+                        <span className="flipAdjective">👗 thrift-aholic</span>
                         <span className="flipAdjective">🎾 tennis fan</span>
                       </div>
                   </div>
