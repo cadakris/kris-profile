@@ -143,11 +143,11 @@ h1 {
   
   /// THIS IS KEYFRAMES FOR WORD SCROLLER
   @keyframes spin_words{
-    10% {
-      transform: translateY(25%);
+    11% {
+      transform: translateY(21%);
   }
-    15% {
-      transform: translateY(-112%);
+    16% {
+      transform: translateY(-121%);
   }
     25% {
       transform: translateY(-100%);
@@ -168,7 +168,7 @@ h1 {
       transform: translateY(-412%);
   }
     100% {
-      transform: translateY(-399%);
+      transform: translateY(-400%);
   }
   }
 
