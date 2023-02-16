@@ -1,5 +1,6 @@
 import SinglePage from './SinglePage'
 
+
 function About({showResume, setShowResume, isOpen, setIsOpen}) {
   function handleCloseModal () {
     setShowResume((showResume) => !showResume)
@@ -22,9 +23,9 @@ function About({showResume, setShowResume, isOpen, setIsOpen}) {
         <br/>
         <p>Hi I’m Kristen, an aspiring software developer! </p><br/>
 
-        <p>I’m a driven and hardworking professional with a proven track record of creating and delivering hours of compelling stories, who is looking to take my newfound technical skills and past work experience to create meaningful applications and products that can help inspire, enhance, and bring joy to people’s lives. </p><br/>
+        <p>I’m a driven and hardworking professional with a proven track record of creating and delivering hours of compelling television content. I'm looking to take my ten years of work experience and my newfound technical skills to create meaningful applications and products that can help inspire, enhance, and bring joy to people’s lives. </p><br/>
 
-        <p>I’m a voracious learner who is eager to expand my technical knowledge and build upon the foundations of frontend and backend technologies that I already have. I’m excited to utilize my newfound passion for development and my technical skills to develop and create exciting products! </p><br/>
+        <p>I’m a voracious learner who is eager to expand my technical knowledge and build upon the frontend and backend technologies that I already have. I’m excited to utilize my newfound passion for development and my technical skills to develop and create exciting products! </p><br/>
         
         <p>When I’m not coding, you can find me exploring my city (which happens to be the best city in the world. No bias here!), checking out coffee shops, riding around town on my bike, binging the latest season of whatever television show is trending, and stuffing my face with delicious food! </p><br/>
 
